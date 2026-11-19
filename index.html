@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js): paste the snippet for seungjojeong.net here if you
+     use one, the same one as on the exhibition pages. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no,address=no,date=no">
+
+<!--
+  ============================================================
+  SEUNGJO JEONG — home page
+  https://www.seungjojeong.net/
+
+  Exhibition pages live in exhibitions/<name>/ beside this file.
+  To add one, copy a list item under "Exhibitions on this site".
+
+  The biography is written from the About page at
+  www.seungjojeong.com/about; replace it with your own wording
+  if you prefer.
+  ============================================================
+-->
+
+<title>Seungjo Jeong — artist and researcher, London</title>
+<meta name="description" content="Seungjo Jeong is a London-based artist and researcher. Documentation of his exhibitions, including &ldquo;Hello, World!&rdquo; (Galerie ERD, Seoul, 2023).">
+
+<link rel="canonical" href="https://www.seungjojeong.net/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Seungjo Jeong">
+<meta property="og:description" content="London-based artist and researcher.">
+<meta property="og:image" content="https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-01.jpg">
+<meta property="og:url" content="https://www.seungjojeong.net/">
+
+<!--
+  Structured data. https://www.seungjojeong.net/#jeong is the ID the
+  exhibition pages use for you: this page is where it resolves.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "ProfilePage",
+      "@id": "https://www.seungjojeong.net/#page",
+      "url": "https://www.seungjojeong.net/",
+      "name": "Seungjo Jeong — artist and researcher, London",
+      "mainEntity": { "@id": "https://www.seungjojeong.net/#jeong" }
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://www.seungjojeong.net/#jeong",
+      "name": "Seungjo Jeong",
+      "alternateName": "Joe Jeong",
+      "jobTitle": "Artist and researcher",
+      "description": "Artist and researcher based in London, with a background in software engineering. His doctoral research, 'Painting Practice as Network: The Interoperability of Contemporary Painting', reconsiders the relation between a painting and its on-screen image.",
+      "url": "https://www.seungjojeong.net/",
+      "email": "enquiries@seungjojeong.com",
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "School of the Art Institute of Chicago" },
+        { "@type": "CollegeOrUniversity", "name": "Royal College of Art" }
+      ],
+      "award": [
+        "British Institution Awards for Students, Royal Academy of Arts, London (2019)",
+        "New Contemporaries Studio Bursary, in partnership with One Thoresby Street, Nottingham (2018)"
+      ],
+      "performerIn": [
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+        { "@id": "https://www.threepainterprotocol.net/#exhibition" }
+      ],
+      "sameAs": [
+        "https://orcid.org/0000-0002-6633-8114",
+        "https://www.rca.ac.uk/research-innovation/research-degrees/research-students/seungjo-jeong/",
+        "https://www.instagram.com/seungjo.jeong/",
+        "https://www.youtube.com/@seungjojeong",
+        "https://www.threepainterprotocol.net/#jeong"
+      ]
+    }
+
+  ]
+}
+</script>
+
+<style>
+  :root {
+    /* The same warm graphite as the exhibition pages. */
+    --ink: #f2f0ec;
+    --paper: #262320;
+    --rule: #4a4540;
+    --quiet: #a39c93;
+    --measure: 34rem;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.0625rem/1.65 Charter, "Iowan Old Style", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 5rem 1.5rem 7rem; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 2.5rem;
+           margin-bottom: 3.5rem; max-width: var(--measure); }
+  h1 {
+    font-size: clamp(2rem, 5.5vw, 3.25rem);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.25rem;
+  }
+  .byline { font-size: 1.0625rem; margin: 0; }
+  h2 {
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    color: var(--quiet);
+    margin: 4.5rem 0 1.5rem;
+  }
+  p { max-width: var(--measure); margin: 0 0 1.25rem; }
+  a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 0.2em; }
+  a:hover { text-decoration-color: var(--ink); }
+
+  /* exhibitions documented on this site: a picture and a caption each, in
+     the same 3:2 box as the installation views on the exhibition pages */
+  .shows { display: grid; grid-template-columns: 1fr; gap: 3rem 2rem; margin: 0; padding: 0; list-style: none; }
+  @media (min-width: 46rem) { .shows { grid-template-columns: 1fr 1fr; } }
+  .shows a { text-decoration: none; display: block; }
+  .shows img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; background: var(--rule); }
+  .shows .t { display: block; margin-top: 0.95rem; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 0.2em; }
+  .shows a:hover .t { text-decoration-color: var(--ink); }
+  .shows .m { display: block; font-size: 0.875rem; line-height: 1.5; color: var(--quiet); margin-top: 0.25rem; }
+
+  .links { list-style: none; margin: 0; padding: 0; max-width: var(--measure); }
+  .links li { margin: 0 0 0.35rem; }
+
+  footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.875rem; color: var(--quiet); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Seungjo Jeong</h1>
+    <p class="byline">Artist and researcher, London</p>
+  </header>
+
+  <p>Seungjo Jeong is a London-based artist and researcher, born in South Korea in 1977, with a background in software engineering. He studied at the School of the Art Institute of Chicago (BFA, 2015) and the Royal College of Art, London (MA Painting, 2017; PhD in Arts and Humanities, 2025). His doctoral research, <em>Painting Practice as Network: The Interoperability of Contemporary Painting</em>, reconsiders the relation between a painting and its on-screen image. He has exhibited in Bloomberg New Contemporaries at the Institute of Contemporary Arts, London (2016), the John Moores Painting Prize at the Walker Art Gallery, Liverpool, as part of the Liverpool Biennial (2018), and the Contemporary British Painting Prize at Huddersfield Art Gallery (2022). His awards include the New Contemporaries Studio Bursary, in partnership with One Thoresby Street, Nottingham (2018), and the British Institution Awards for Students, Royal Academy of Arts, London (2019).</p>
+
+  <h2>Exhibitions on this site</h2>
+  <ul class="shows">
+    <li>
+      <a href="exhibitions/hello-world/">
+        <img src="exhibitions/hello-world/images/hello-world-install-01.jpg" loading="lazy"
+             alt="Looking into the main room of Galerie ERD: HELLO along the long wall at left and the nine canvases of , World! on the adjoining wall at right.">
+        <span class="t">&ldquo;Hello, World!&rdquo;</span>
+        <span class="m">Solo exhibition &middot; Galerie ERD, Seoul &middot; 12 October &ndash; 5 November 2023</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.threepainterprotocol.net/">
+        <img src="https://www.threepainterprotocol.net/images/three-painter-protocol-install-01.jpg" loading="lazy"
+             alt="Looking across the gallery: a group of seven small paintings on the free-standing partition wall at left, a single small painting on the whitewashed brick wall beyond, and a draped cloth on a branch standing in the foreground.">
+        <span class="t">Three Painter Protocol</span>
+        <span class="m">With Jesse Ash and Rebecca Fortnum &middot; The Transformation Gallery, London &middot; 8&ndash;25 October 2026</span>
+      </a>
+    </li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:enquiries@seungjojeong.com">enquiries@seungjojeong.com</a></p>
+  <ul class="links">
+    <li><a href="https://www.instagram.com/seungjo.jeong/">Instagram</a></li>
+    <li><a href="https://www.youtube.com/@seungjojeong">YouTube</a></li>
+    <li><a href="https://orcid.org/0000-0002-6633-8114">ORCID</a></li>
+    <li><a href="https://www.rca.ac.uk/research-innovation/research-degrees/research-students/seungjo-jeong/">Royal College of Art research profile</a></li>
+  </ul>
+
+  <footer>
+    <p>Works &copy; the artists. Photographs &copy; Seungjo Jeong.</p>
+  </footer>
+</div>
+</body>
+</html>
