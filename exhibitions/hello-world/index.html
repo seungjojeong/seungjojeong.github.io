@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js): paste the snippet for seungjojeong.net here if you
+     use one. Don't reuse the Three Painter Protocol ID (G-7XL0MRPBZ5), or the
+     two sites' visits will be counted together. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- iOS Safari turns anything address-shaped into a Maps link of its own
+     accord. The exhibition is over, so directions help nobody, and the
+     venue line ends up looking like a link the page does not have. -->
+<meta name="format-detection" content="telephone=no,address=no,date=no">
+
+<!--
+  ============================================================
+  "HELLO, WORLD!" — documentation page
+  https://www.seungjojeong.net/exhibitions/hello-world/
+
+  Images live in images/ beside this file. GitHub Pages is
+  case-sensitive, so the filenames must match exactly.
+
+  Every placeholder is marked TODO in the JSON-LD.
+  Outstanding:
+  - Venue: street address with gu, postcode, coordinates.
+    Candidate address, from an undated
+    art-fair listing: 25, Hoenamu-ro 13ga-gil, Yongsan-gu,
+    04344 Seoul. Confirm it was the address in October 2023.
+  - Itaewon: GeoNames page (Wikidata Q495646 is filled in).
+  - Walls: which wall Look Down, Look Up! and Bodily Memories
+    hung on (the photographs show Bodily Memories in a smaller
+    space off the main room); wall widths, heights and colours;
+    every work's hanging height (bottom edge above the floor).
+  - Floor plan image, if there is one (hasMap).
+  - Exhibition text, optional: a profile page for Moon Hyun
+    Jeoung's sameAs, if she has one. Save the gallery's page in the
+    Internet Archive and add the snapshot to the text's node as
+    "archivedAt", so the link survives if the gallery's site changes.
+  - Walkthrough video: upload date; check that the title in the
+    JSON-LD matches YouTube (it is taken from thesis Figure 4J).
+  - Organiser: add one only if Galerie ERD organised the show.
+  - Google tag (see top of file).
+  ============================================================
+-->
+
+<title>&ldquo;Hello, World!&rdquo; — Seungjo Jeong — Galerie ERD, Seoul, 2023</title>
+<meta name="description" content="&ldquo;Hello, World!&rdquo;: a solo exhibition of paintings by Seungjo Jeong. Galerie ERD, Seoul, 12 October – 5 November 2023.">
+
+<link rel="canonical" href="https://www.seungjojeong.net/exhibitions/hello-world/">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="&ldquo;Hello, World!&rdquo; — Seungjo Jeong">
+<meta property="og:description" content="Five paintings made for Galerie ERD, Seoul, 12 October – 5 November 2023.">
+<meta property="og:image" content="https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-01.jpg">
+<meta property="og:url" content="https://www.seungjojeong.net/exhibitions/hello-world/">
+
+<!--
+  Structured data, block 1 of 2: Schema.org only.
+  IDs on your domain's root (#jeong, #london) and under /works/ are
+  site-wide: use them unchanged on any other page that mentions you, London
+  or these paintings (e.g. the Viva exhibition page). IDs ending in a #name
+  on this page belong to this exhibition only.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "ExhibitionEvent",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition",
+      "name": "\"Hello, World!\"",
+      "startDate": "2023-10-12",
+      "endDate": "2023-11-05",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+      "image": [
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-01" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-02" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-03" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-04" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-05" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-06" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-07" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-08" }
+      ],
+      "description": "A solo exhibition by London-based Korean artist Seungjo Jeong.",
+      "workFeatured": [
+        { "@id": "https://www.seungjojeong.net/works/hello-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/world-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/look-down-look-up-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" }
+      ],
+      "location": [
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#online" }
+      ],
+      "performer": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "recordedIn": [
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#video-walkthrough" }
+      ],
+      "url": "https://www.seungjojeong.net/exhibitions/hello-world/",
+      "sameAs": [
+        "http://galerieerd.com/hello-world/"
+      ],
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition-text" }
+    },
+
+    {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd",
+      "name": "Galerie ERD",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "TODO: street address, including the gu (district)",
+        "addressLocality": "Seoul",
+        "postalCode": "TODO: postcode",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "TODO: latitude in decimal degrees",
+        "longitude": "TODO: longitude in decimal degrees"
+      },
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#itaewon" },
+      "sameAs": [
+        "http://galerieerd.com/"
+      ],
+      "hasMap": {
+        "@type": "Map",
+        "mapType": "https://schema.org/VenueMap",
+        "url": "TODO: floor plan, e.g. https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-floor-plan.jpg (delete this block if there is none)"
+      },
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#ceiling",
+          "name": "Ceiling",
+          "value": "Low, umber-coloured",
+          "description": "Makes the space feel darker. The paintings were made brighter than usual to compensate."
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#skylights",
+          "name": "Skylights",
+          "value": true,
+          "description": "Daylight made the space bright and warm by day, but its direction and amount changed through the day."
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#windows-and-entrance",
+          "name": "Windows and glass entrance",
+          "value": true,
+          "description": "Further daylight, also changing through the day."
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#courtyard-window",
+          "name": "Window onto the courtyard",
+          "value": true,
+          "description": "Looks out onto the gallery's courtyard. Mirage (2023) hung right next to it."
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#strip-lighting",
+          "name": "Strip lighting",
+          "value": true,
+          "description": "Fixed to the ceiling. Even, but not bright enough to use alone."
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#spotlights-original",
+          "name": "Track spotlights, as found",
+          "value": true,
+          "description": "Bright but patchy; they cast arch-shaped shadows on the wall above the canvases. Replaced before the opening."
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#spotlights-replacement",
+          "name": "Track spotlights, replacement",
+          "value": true,
+          "description": "Dozens of dimmer spotlights, each covering a smaller area of wall, fitted less than a day before the opening."
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#floor",
+          "name": "Floor",
+          "value": "Wooden"
+        }
+      ]
+    },
+
+    {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello",
+      "name": "Main wall",
+      "description": "The gallery's main wall, on which Hello (2023) hung. Adjacent to the wall carrying , World! (2023): on the left, as seen facing , World!.",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+      "geoTouches": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "White" },
+        { "@type": "PropertyValue", "name": "width", "value": "TODO: wall width", "unitCode": "CMT" },
+        { "@type": "PropertyValue", "name": "height", "value": "TODO: floor to ceiling", "unitCode": "CMT" }
+      ]
+    },
+
+    {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world",
+      "name": "Wall on which , World! (2023) hung",
+      "description": "Shorter than the 8 m a letter-form version of , World! would have needed, which led to the keyboard design. Hello (2023) hung on the adjacent main wall, to its left; Mirage (2023) on the adjacent wall to its right.",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+      "geoTouches": [
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage" }
+      ],
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "TODO: wall colour" },
+        { "@type": "PropertyValue", "name": "width", "value": "TODO: wall width", "unitCode": "CMT" },
+        { "@type": "PropertyValue", "name": "height", "value": "TODO: floor to ceiling", "unitCode": "CMT" }
+      ]
+    },
+
+    {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage",
+      "name": "Wall with the courtyard window",
+      "description": "Adjacent to the wall carrying , World! (2023): on the right, as seen facing , World!. Mirage (2023) hung on it, beside the window.",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+      "geoTouches": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" }
+    },
+
+    {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#itaewon",
+      "name": "Itaewon",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#seoul" },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q495646",
+        "TODO: GeoNames page for Itaewon"
+      ]
+    },
+
+    {
+      "@type": "City",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#seoul",
+      "name": "Seoul",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q8684",
+        "https://www.geonames.org/1835848"
+      ]
+    },
+
+    {
+      "@type": "City",
+      "@id": "https://www.seungjojeong.net/#london",
+      "name": "London",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q84",
+        "https://www.geonames.org/2643743"
+      ]
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://www.seungjojeong.net/#jeong",
+      "name": "Seungjo Jeong",
+      "alternateName": "Joe Jeong",
+      "jobTitle": "Artist and researcher",
+      "description": "Artist and researcher based in London, with a background in software engineering. His doctoral research, 'Painting Practice as Network: The Interoperability of Contemporary Painting', reconsiders the relation between a painting and its on-screen image.",
+      "url": "https://www.seungjojeong.net/",
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "School of the Art Institute of Chicago" },
+        { "@type": "CollegeOrUniversity", "name": "Royal College of Art" }
+      ],
+      "sameAs": [
+        "https://orcid.org/0000-0002-6633-8114",
+        "https://www.rca.ac.uk/research-innovation/research-degrees/research-students/seungjo-jeong/",
+        "https://www.instagram.com/seungjo.jeong/",
+        "https://www.threepainterprotocol.net/#jeong"
+      ]
+    },
+
+    {
+      "@type": "Article",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition-text",
+      "name": "\"Hello, World!\"",
+      "author": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#text-author" },
+      "about": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "mentions": [
+        { "@id": "https://www.seungjojeong.net/works/hello-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/world-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/look-down-look-up-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" }
+      ],
+      "url": "http://galerieerd.com/hello-world/",
+      "publisher": { "@type": "Organization", "name": "Galerie ERD", "url": "http://galerieerd.com/" },
+      "inLanguage": "ko"
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#text-author",
+      "name": "Moon Hyun Jeoung",
+      "alternateName": "문현정",
+      "jobTitle": "Independent curator"
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/hello-2023/",
+      "name": "Hello",
+      "dateCreated": "2023",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Polyptych of sixteen canvases. Its subject is the Amazon Locker.",
+      "height": { "@type": "QuantitativeValue", "value": 160, "unitCode": "CMT" },
+      "width": { "@type": "QuantitativeValue", "value": 670, "unitCode": "CMT" },
+      "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" },
+      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-hello" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/world-2023/",
+      "name": ", World!",
+      "dateCreated": "2023",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Polyptych of nine canvases, one for each key pressed to type ', World!' on a computer keyboard.",
+      "height": { "@type": "QuantitativeValue", "value": 150, "unitCode": "CMT" },
+      "width": { "@type": "QuantitativeValue", "value": 350, "unitCode": "CMT" },
+      "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" },
+      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-world" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/mirage-2023/",
+      "name": "Mirage",
+      "dateCreated": "2023",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Two parts, each 50 x 40 cm.",
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        }
+      ],
+      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-mirage" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/look-down-look-up-2023/",
+      "name": "Look Down, Look Up!",
+      "dateCreated": "2023",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Polyptych of nine canvases.",
+      "height": { "@type": "QuantitativeValue", "value": 160, "unitCode": "CMT" },
+      "width": { "@type": "QuantitativeValue", "value": 450, "unitCode": "CMT" },
+      "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" },
+      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-look-down-look-up" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/",
+      "name": "Bodily Memories",
+      "dateCreated": "2023",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Three parts, each 90 x 50 cm. Its subject is videotape. Metallic pigments make the colour and value shift with the light and the viewing angle.",
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 90, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 90, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-3",
+          "height": { "@type": "QuantitativeValue", "value": 90, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        }
+      ],
+      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-bodily-memories" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-hello",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/work-jeong-hello-2023.jpg",
+      "caption": "Seungjo Jeong, Hello, 2023. Acrylic on linen, 160 x 670 cm overall, 16 parts.",
+      "description": "The word HELLO in tall capital letters built from yellow canvases, with bands of bare grey linen. Small panels holding pale blue screen shapes are set into three of the letters. It runs almost the length of a white wall beneath an exposed concrete ceiling.",
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "Work and photograph © Seungjo Jeong."
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-world",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/work-jeong-world-2023.jpg",
+      "caption": "Seungjo Jeong, , World!, 2023. Acrylic on linen, 150 x 350 cm overall, 9 parts.",
+      "description": "Nine canvases spaced across a white wall like keys lifted from a keyboard: small squares in blue, violet, red, green, pale blue, yellow and magenta, a long orange bar like a space bar, and a wider blue rectangle at right.",
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "Work and photograph © Seungjo Jeong."
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-mirage",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/work-jeong-mirage-2023.jpg",
+      "caption": "Seungjo Jeong, Mirage, 2023. Acrylic on linen, 50 x 40 cm each, 2 parts.",
+      "description": "Two small canvases side by side: at left, an ochre panel with a trapezoid stepping inward; at right, bare linen holding a pale blue trapezoid above a thin pink band.",
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "Work and photograph © Seungjo Jeong."
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-look-down-look-up",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/work-jeong-look-down-look-up-2023.jpg",
+      "caption": "Seungjo Jeong, Look Down, Look Up!, 2023. Acrylic on linen, 160 x 450 cm overall, 9 parts.",
+      "description": "Three H-shaped letters in teal, yellow and green, each made of two tall columns of stacked canvases and bare linen joined by a small screen-shaped panel. The joining panel sits high in the first letter, in the middle of the second and low in the third.",
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "Work and photograph © Seungjo Jeong."
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-bodily-memories",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/work-jeong-bodily-memories-2023.jpg",
+      "caption": "Seungjo Jeong, Bodily Memories, 2023. Acrylic on linen, 90 x 50 cm each, 3 parts.",
+      "description": "Three tall canvases in white, gold and black, each in the shape of a videocassette, with rounded areas of bare linen at top and bottom.",
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "Work and photograph © Seungjo Jeong."
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-01",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-01.jpg",
+      "description": "Looking into the main room: HELLO along the long wall at left and the nine canvases of , World! on the adjoining wall at right. Track spotlights hang from an exposed concrete ceiling with a skylight; the floor is wood.",
+      "about": [
+        { "@id": "https://www.seungjojeong.net/works/hello-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/world-2023/" }
+      ],
+      "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2023 Seungjo Jeong",
+      "representativeOfPage": true
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-02",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-02.jpg",
+      "description": ", World! on the far wall, with the end of HELLO on the wall to its left and the two small panels of Mirage on the wall to its right.",
+      "about": [
+        { "@id": "https://www.seungjojeong.net/works/world-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/hello-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" }
+      ],
+      "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2023 Seungjo Jeong"
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-03",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-03.jpg",
+      "description": "HELLO seen at an angle along the main wall.",
+      "about": { "@id": "https://www.seungjojeong.net/works/hello-2023/" },
+      "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello" },
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2023 Seungjo Jeong"
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-04",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-04.jpg",
+      "description": ", World! under the gallery lights, with the edge of HELLO visible on the adjoining wall at left.",
+      "about": { "@id": "https://www.seungjojeong.net/works/world-2023/" },
+      "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2023 Seungjo Jeong"
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-05",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-05.jpg",
+      "description": "Mirage hung to the left of a large window that looks out onto planting in the gallery's courtyard.",
+      "about": { "@id": "https://www.seungjojeong.net/works/mirage-2023/" },
+      "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage" },
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2023 Seungjo Jeong"
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-06",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-06.jpg",
+      "description": "Look Down, Look Up! seen at an angle, under track spotlights.",
+      "about": { "@id": "https://www.seungjojeong.net/works/look-down-look-up-2023/" },
+      "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2023 Seungjo Jeong"
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-07",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-07.jpg",
+      "description": "Bodily Memories on a white wall. Through the doorway at left, part of HELLO is visible in the main room.",
+      "about": { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
+      "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2023 Seungjo Jeong"
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-08",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-install-08.jpg",
+      "description": "Bodily Memories on the far wall of a smaller space, beyond a low white counter.",
+      "about": { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
+      "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+      "license": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/hello-world/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2023 Seungjo Jeong"
+    },
+
+    {
+      "@type": "VirtualLocation",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#online",
+      "name": "\"Hello, World!\" online: photographs and video",
+      "url": "https://www.seungjojeong.net/exhibitions/hello-world/",
+      "description": "Interpretive choice. The exhibition's online documentation is treated as a second, virtual location where the exhibition can still be visited. The documentation was made on site in Seoul; this is not a statement about how the exhibition was attended in 2023."
+    },
+
+    {
+      "@type": "VideoObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#video-walkthrough",
+      "name": "Exhibition Walkthrough: \"Hello, World!\"",
+      "description": "A walk through the exhibition at Galerie ERD, filmed in 4K at 30 fps on an iPhone.",
+      "uploadDate": "TODO: YYYY-MM-DD, as shown under the video on YouTube",
+      "thumbnailUrl": "https://img.youtube.com/vi/tK1X3N4FXQY/hqdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/tK1X3N4FXQY",
+      "url": "https://youtu.be/tK1X3N4FXQY",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "about": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" }
+    }
+
+  ]
+}
+</script>
+
+<!--
+  Structured data, block 2 of 2: what Schema.org can't say.
+  How each work was hung in this exhibition. These facts belong to the
+  pairing of a work and an exhibition, not to the work, so each sits in
+  its own record rather than on the painting: Bodily Memories can then
+  have a different record on the Viva page without the two contradicting.
+  Terms starting "display:" are defined under
+  https://www.seungjojeong.net/ns/display# (not yet published).
+  Kept in a separate block so that if any tool can't read it, block 1 is
+  unaffected.
+-->
+<script type="application/ld+json">
+{
+  "@context": [
+    "https://schema.org",
+    { "display": "https://www.seungjojeong.net/ns/display#" }
+  ],
+  "@graph": [
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-hello",
+      "display:work": { "@id": "https://www.seungjojeong.net/works/hello-2023/" },
+      "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello" },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" },
+      "display:topEdgeBelowCeiling": { "@type": "QuantitativeValue", "maxValue": 90, "unitCode": "CMT" },
+      "display:lighting": [
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#strip-lighting" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#spotlights-replacement" }
+      ],
+      "description": "Hung on the gallery's main wall, lower than usual, to bring the painting closer to the viewer's body. The space above it to the ceiling ran to as much as 90 cm, more than at the sides or below."
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-world",
+      "display:work": { "@id": "https://www.seungjojeong.net/works/world-2023/" },
+      "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" },
+      "display:arrangement": "Rearranged for this wall: the yellow canvas at top left was swapped with the navy one, so that it would not compete with Hello on the adjacent wall to the left, and other canvases were moved to rebalance the nine colours."
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-mirage",
+      "display:work": { "@id": "https://www.seungjojeong.net/works/mirage-2023/" },
+      "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage" },
+      "display:nextTo": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#courtyard-window" },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" },
+      "description": "Hung right next to the window that looks out onto the gallery's courtyard (exhibition text)."
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-look-down-look-up",
+      "display:work": { "@id": "https://www.seungjojeong.net/works/look-down-look-up-2023/" },
+      "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "display:wall": "TODO: which wall",
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" },
+      "description": "The exhibition text reads the hanging height as part of the work: where viewer and painting meet changes with the height at which it is hung."
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-bodily-memories",
+      "display:work": { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
+      "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "display:wall": "TODO: which wall",
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" }
+    }
+
+  ]
+}
+</script>
+
+<style>
+  :root {
+    /* Warm graphite, as on the Three Painter Protocol page, so the two read
+       as one body of documentation. The letterbox behind each image takes
+       the same tone, so nothing frames it. */
+    --ink: #f2f0ec;
+    --paper: #262320;
+    --rule: #4a4540;
+    --quiet: #a39c93;
+    --measure: 34rem;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.0625rem/1.65 Charter, "Iowan Old Style", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 5rem 1.5rem 7rem; }
+  /* The masthead is held to the text measure, so the page has two widths
+     rather than three: a column for reading, a wider field for pictures. */
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 2.5rem;
+           margin-bottom: 3.5rem; max-width: var(--measure); }
+  h1 {
+    font-size: clamp(2rem, 5.5vw, 3.25rem);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.25rem;
+  }
+  .byline { font-size: 1.0625rem; margin: 0 0 0.4rem; }
+  .meta { color: var(--quiet); font-size: 0.9375rem; margin: 0 0 0.25rem; }
+  /* the venue and dates sit as a tight pair; prose after them needs air */
+  .meta + p:not(.meta) { margin-top: 1.25rem; }
+  h2 {
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    color: var(--quiet);
+    margin: 4.5rem 0 1.5rem;
+  }
+  p { max-width: var(--measure); margin: 0 0 1.25rem; }
+  a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 0.2em; }
+  a:hover { text-decoration-color: var(--ink); }
+
+  figure { margin: 0; }
+  figure img { width: 100%; height: auto; display: block; background: var(--paper); }
+  figcaption { font-size: 0.875rem; line-height: 1.5; color: var(--quiet); margin-top: 0.95rem; }
+  figcaption .t { font-style: italic; color: var(--ink); }
+
+  /* individual works. A uniform square box levels the rows; object-fit:
+     contain means nothing is cropped. */
+  .works { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 2.75rem 2rem; margin: 1.75rem 0 0; align-items: start; }
+  .works img { aspect-ratio: 1 / 1; object-fit: contain; background: var(--paper); }
+  /* The work photographs are 3:2 views of each work on its wall rather
+     than the painting alone, so a square box would only letterbox them.
+     Each takes a row of its own at its own proportions. The square-box
+     rule above stays for any later frontal image without "wide". */
+  .works figure.wide { grid-column: 1 / -1; }
+  .works figure.wide img { aspect-ratio: auto; }
+  /* In a single column there are no rows to level, so each image takes its
+     own height, with a ceiling so a tall work doesn't run off the screen. */
+  @media (max-width: 34rem) {
+    .works img {
+      aspect-ratio: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 78vh;
+      margin-inline: auto;
+    }
+  }
+
+  /* installation views, wider. A uniform 3:2 box keeps the rows aligned. */
+  .installs { display: grid; grid-template-columns: 1fr; gap: 3rem 2rem; margin: 0; }
+  @media (min-width: 46rem) { .installs { grid-template-columns: 1fr 1fr; } }
+  .installs img { aspect-ratio: 3 / 2; object-fit: contain; background: var(--paper); }
+  @media (max-width: 45.99rem) {
+    .installs img { aspect-ratio: auto; width: auto; max-width: 100%; max-height: 62vh; }
+  }
+
+  .rel { font-size:0.8125rem; line-height:1.5; color:var(--quiet); margin-top:0.45rem; }
+  .rel a { color:inherit; }
+  .works figure { scroll-margin-top: 2rem; }
+
+  footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.875rem; color: var(--quiet); }
+
+  /* Click to enlarge. The anchor wraps the image so this works without
+     JavaScript too, in which case the browser simply opens the file. */
+  a.zoom { display: block; cursor: zoom-in; }
+  a.zoom:focus-visible { outline: 2px solid var(--quiet); outline-offset: 3px; }
+  #lightbox {
+    position: fixed; inset: 0; z-index: 50;
+    display: none; place-items: center;
+    background: rgba(16, 14, 12, 0.94);
+    padding: 2.5rem 1.5rem; cursor: zoom-out;
+  }
+  #lightbox.open { display: grid; }
+  #lightbox figure { margin: 0; display: flex; flex-direction: column;
+                     align-items: center; gap: 1rem; max-height: 100%; }
+  #lightbox img { max-width: 100%; max-height: calc(100vh - 8rem);
+                  width: auto; height: auto; object-fit: contain; }
+  #lightbox figcaption { color: var(--quiet); font-size: 0.8125rem;
+                         text-align: center; max-width: 40rem; margin: 0;
+                         line-height: 1.6; }
+  #lightbox figcaption .t { font-style: italic; color: var(--ink);
+                            font-size: 1rem; }
+  #lightbox button {
+    position: absolute; top: 1rem; right: 1.25rem;
+    background: none; border: 0; color: var(--quiet);
+    font: inherit; font-size: 1.5rem; line-height: 1; cursor: pointer;
+    padding: 0.25rem 0.5rem;
+  }
+  #lightbox button:hover, #lightbox button:focus-visible { color: var(--ink); }
+  @media (max-width: 34rem) {
+    #lightbox { padding: 3rem 0.5rem 1.5rem; }
+    #lightbox img { max-height: calc(100vh - 7rem); }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #lightbox.open img { animation: zoomin 0.18s ease-out; }
+    @keyframes zoomin { from { opacity: 0; transform: scale(0.98); } }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>&ldquo;Hello, World!&rdquo;</h1>
+    <p class="byline">Seungjo Jeong</p>
+  </header>
+
+  <h2>The exhibition</h2>
+  <p class="meta">Galerie ERD, Seoul</p>
+  <p class="meta">12 October &ndash; 5 November 2023</p>
+  <!-- First paragraph drafted from thesis Chapter 4. Revise freely. -->
+  <p>The title comes from &lsquo;Hello, World!&rsquo;, the phrase programmers traditionally make a computer display when they write their first code in a new language: if the code is right, the computer greets its coder on screen. The exhibition asked whether painting, too, could take part in conversations between humans and computers.</p>
+  <p>The exhibition text, &ldquo;Hello, World!&rdquo;, was written by the independent curator Moon Hyun Jeoung. It is published in Korean on <a href="http://galerieerd.com/hello-world/" hreflang="ko">the gallery&rsquo;s page</a> for the exhibition.</p>
+
+  <h2>The paintings</h2>
+  <div class="works">
+    <figure id="jeong-hello" class="wide">
+      <a class="zoom" href="images/work-jeong-hello-2023.jpg"><img src="images/work-jeong-hello-2023.jpg"
+           alt="The word HELLO in tall capital letters built from yellow canvases, with bands of bare grey linen. Small panels holding pale blue screen shapes are set into three of the letters. It runs almost the length of a white wall beneath an exposed concrete ceiling."></a>
+      <figcaption><span class="t">Hello</span>, 2023<br>160 &times; 670 cm overall, 16 parts &middot; acrylic on linen</figcaption>
+      <p class="rel">Made as a pair with <a href="#jeong-world"><em>, World!</em></a>.</p>
+    </figure>
+    <figure id="jeong-world" class="wide">
+      <a class="zoom" href="images/work-jeong-world-2023.jpg"><img src="images/work-jeong-world-2023.jpg"
+           alt="Nine canvases spaced across a white wall like keys lifted from a keyboard: small squares in blue, violet, red, green, pale blue, yellow and magenta, a long orange bar like a space bar, and a wider blue rectangle at right."></a>
+      <figcaption><span class="t">, World!</span>, 2023<br>150 &times; 350 cm overall, 9 parts &middot; acrylic on linen</figcaption>
+      <p class="rel">Made as a pair with <a href="#jeong-hello"><em>Hello</em></a>.</p>
+    </figure>
+    <figure id="jeong-look-down-look-up" class="wide">
+      <a class="zoom" href="images/work-jeong-look-down-look-up-2023.jpg"><img src="images/work-jeong-look-down-look-up-2023.jpg"
+           alt="Three H-shaped letters in teal, yellow and green, each made of two tall columns of stacked canvases and bare linen joined by a small screen-shaped panel. The joining panel sits high in the first letter, in the middle of the second and low in the third."></a>
+      <figcaption><span class="t">Look Down, Look Up!</span>, 2023<br>160 &times; 450 cm overall, 9 parts &middot; acrylic on linen</figcaption>
+    </figure>
+    <figure id="jeong-mirage" class="wide">
+      <a class="zoom" href="images/work-jeong-mirage-2023.jpg"><img src="images/work-jeong-mirage-2023.jpg"
+           alt="Two small canvases side by side: at left, an ochre panel with a trapezoid stepping inward; at right, bare linen holding a pale blue trapezoid above a thin pink band."></a>
+      <figcaption><span class="t">Mirage</span>, 2023<br>50 &times; 40 cm each, 2 parts &middot; acrylic on linen</figcaption>
+    </figure>
+    <figure id="jeong-bodily-memories" class="wide">
+      <a class="zoom" href="images/work-jeong-bodily-memories-2023.jpg"><img src="images/work-jeong-bodily-memories-2023.jpg"
+           alt="Three tall canvases in white, gold and black, each in the shape of a videocassette, with rounded areas of bare linen at top and bottom."></a>
+      <figcaption><span class="t">Bodily Memories</span>, 2023<br>90 &times; 50 cm each, 3 parts &middot; acrylic on linen</figcaption>
+    </figure>
+  </div>
+
+  <!-- Drafted from thesis Chapter 4. Revise freely. -->
+  <h2>The space</h2>
+  <p>Galerie ERD is in Itaewon, often described as the most multicultural neighbourhood in Seoul. The paintings use English rather than Korean partly for that reason, and partly to answer Lawrence Weiner&rsquo;s retrospective, <em>Under the Sun</em>, then on at the Amorepacific Museum of Art nearby.</p>
+
+  <h2>Installation views</h2>
+  <div class="installs" data-caption="Installation view, <span class=&quot;t&quot;>&ldquo;Hello, World!&rdquo;</span>, Galerie ERD, Seoul, 2023.">
+    <figure>
+      <a class="zoom" href="images/hello-world-install-01.jpg"><img src="images/hello-world-install-01.jpg"
+           loading="lazy"
+           alt="Looking into the main room: HELLO along the long wall at left and the nine canvases of , World! on the adjoining wall at right. Track spotlights hang from an exposed concrete ceiling with a skylight; the floor is wood."></a>
+    </figure>
+    <figure>
+      <a class="zoom" href="images/hello-world-install-02.jpg"><img src="images/hello-world-install-02.jpg"
+           loading="lazy"
+           alt=", World! on the far wall, with the end of HELLO on the wall to its left and the two small panels of Mirage on the wall to its right."></a>
+    </figure>
+    <figure>
+      <a class="zoom" href="images/hello-world-install-03.jpg"><img src="images/hello-world-install-03.jpg"
+           loading="lazy"
+           alt="HELLO seen at an angle along the main wall."></a>
+    </figure>
+    <figure>
+      <a class="zoom" href="images/hello-world-install-04.jpg"><img src="images/hello-world-install-04.jpg"
+           loading="lazy"
+           alt=", World! under the gallery lights, with the edge of HELLO visible on the adjoining wall at left."></a>
+    </figure>
+    <figure>
+      <a class="zoom" href="images/hello-world-install-05.jpg"><img src="images/hello-world-install-05.jpg"
+           loading="lazy"
+           alt="Mirage hung to the left of a large window that looks out onto planting in the gallery's courtyard."></a>
+    </figure>
+    <figure>
+      <a class="zoom" href="images/hello-world-install-06.jpg"><img src="images/hello-world-install-06.jpg"
+           loading="lazy"
+           alt="Look Down, Look Up! seen at an angle, under track spotlights."></a>
+    </figure>
+    <figure>
+      <a class="zoom" href="images/hello-world-install-07.jpg"><img src="images/hello-world-install-07.jpg"
+           loading="lazy"
+           alt="Bodily Memories on a white wall. Through the doorway at left, part of HELLO is visible in the main room."></a>
+    </figure>
+    <figure>
+      <a class="zoom" href="images/hello-world-install-08.jpg"><img src="images/hello-world-install-08.jpg"
+           loading="lazy"
+           alt="Bodily Memories on the far wall of a smaller space, beyond a low white counter."></a>
+    </figure>
+  </div>
+
+  <h2>Exhibition walkthrough</h2>
+  <p><a href="https://youtu.be/tK1X3N4FXQY">youtu.be/tK1X3N4FXQY</a></p>
+
+  <footer>
+    <p>Works and photographs &copy; 2023 Seungjo Jeong. See <a href="rights.html">rights and permissions</a>.</p>
+  </footer>
+
+</div>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+  <button type="button" aria-label="Close">&times;</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+</div>
+
+<script>
+(function () {
+  var box = document.getElementById('lightbox');
+  var img = box.querySelector('img');
+  var cap = box.querySelector('figcaption');
+  var shut = box.querySelector('button');
+  var last = null;
+
+  function open(link) {
+    var source = link.querySelector('img');
+    img.src = link.getAttribute('href');
+    img.alt = source ? source.alt : '';
+    var figure = link.closest('figure');
+    var text = figure && figure.querySelector('figcaption');
+    // the caption's own markup is reused rather than its text, so the
+    // italic on the work's title survives into the enlarged view
+    var html = text ? text.innerHTML.trim() : '';
+
+    // installation views share a caption declared on the grid; a figure's
+    // own caption, where it has one, follows it
+    var group = figure && figure.closest('[data-caption]');
+    if (group) html = html ? group.getAttribute('data-caption') + ' ' + html : group.getAttribute('data-caption');
+
+    cap.innerHTML = html;
+    box.hidden = false;
+    box.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    last = link;
+    shut.focus();
+  }
+
+  function close() {
+    box.classList.remove('open');
+    box.hidden = true;
+    img.removeAttribute('src');
+    document.body.style.overflow = '';
+    if (last) { last.focus(); last = null; }
+  }
+
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest ? e.target.closest('a.zoom') : null;
+    if (link) {                      // plain left-click only: let the reader
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();            // still open the file in a new tab
+      open(link);
+      return;
+    }
+    if (box.classList.contains('open')) close();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && box.classList.contains('open')) close();
+  });
+})();
+</script>
+</body>
+</html>
