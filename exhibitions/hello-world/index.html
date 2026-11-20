@@ -2,45 +2,11 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<!-- Google tag (gtag.js): paste the snippet for seungjojeong.net here if you
-     use one. Don't reuse the Three Painter Protocol ID (G-7XL0MRPBZ5), or the
-     two sites' visits will be counted together. -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- iOS Safari turns anything address-shaped into a Maps link of its own
      accord. The exhibition is over, so directions help nobody, and the
      venue line ends up looking like a link the page does not have. -->
 <meta name="format-detection" content="telephone=no,address=no,date=no">
-
-<!--
-  ============================================================
-  "HELLO, WORLD!" — documentation page
-  https://www.seungjojeong.net/exhibitions/hello-world/
-
-  Images live in images/ beside this file. GitHub Pages is
-  case-sensitive, so the filenames must match exactly.
-
-  Every placeholder is marked TODO in the JSON-LD.
-  Outstanding:
-  - Venue: street address with gu, postcode, coordinates.
-    Candidate address, from an undated
-    art-fair listing: 25, Hoenamu-ro 13ga-gil, Yongsan-gu,
-    04344 Seoul. Confirm it was the address in October 2023.
-  - Itaewon: GeoNames page (Wikidata Q495646 is filled in).
-  - Walls: which wall Look Down, Look Up! and Bodily Memories
-    hung on (the photographs show Bodily Memories in a smaller
-    space off the main room); wall widths, heights and colours;
-    every work's hanging height (bottom edge above the floor).
-  - Floor plan image, if there is one (hasMap).
-  - Exhibition text, optional: a profile page for Moon Hyun
-    Jeoung's sameAs, if she has one. Save the gallery's page in the
-    Internet Archive and add the snapshot to the text's node as
-    "archivedAt", so the link survives if the gallery's site changes.
-  - Walkthrough video: upload date; check that the title in the
-    JSON-LD matches YouTube (it is taken from thesis Figure 4J).
-  - Organiser: add one only if Galerie ERD organised the show.
-  - Google tag (see top of file).
-  ============================================================
--->
 
 <title>&ldquo;Hello, World!&rdquo; — Seungjo Jeong — Galerie ERD, Seoul, 2023</title>
 <meta name="description" content="&ldquo;Hello, World!&rdquo;: a solo exhibition of paintings by Seungjo Jeong. Galerie ERD, Seoul, 12 October – 5 November 2023.">
@@ -72,7 +38,7 @@
       "startDate": "2023-10-12",
       "endDate": "2023-11-05",
       "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "image": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-01" },
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-02" },
@@ -91,10 +57,7 @@
         { "@id": "https://www.seungjojeong.net/works/look-down-look-up-2023/" },
         { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" }
       ],
-      "location": [
-        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
-        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#online" }
-      ],
+      "location": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
       "performer": { "@id": "https://www.seungjojeong.net/#jeong" },
       "recordedIn": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#video-walkthrough" }
@@ -107,30 +70,19 @@
     },
 
     {
-      "@type": "Place",
+      "@type": "ArtGallery",
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd",
       "name": "Galerie ERD",
+      "url": "http://galerieerd.com/",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "TODO: street address, including the gu (district)",
         "addressLocality": "Seoul",
-        "postalCode": "TODO: postcode",
         "addressCountry": "KR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "TODO: latitude in decimal degrees",
-        "longitude": "TODO: longitude in decimal degrees"
       },
       "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#itaewon" },
       "sameAs": [
         "http://galerieerd.com/"
       ],
-      "hasMap": {
-        "@type": "Map",
-        "mapType": "https://schema.org/VenueMap",
-        "url": "TODO: floor plan, e.g. https://www.seungjojeong.net/exhibitions/hello-world/images/hello-world-floor-plan.jpg (delete this block if there is none)"
-      },
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",
@@ -172,6 +124,7 @@
           "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#spotlights-original",
           "name": "Track spotlights, as found",
           "value": true,
+          "validThrough": "2023-10-11",
           "description": "Bright but patchy; they cast arch-shaped shadows on the wall above the canvases. Replaced before the opening."
         },
         {
@@ -179,6 +132,8 @@
           "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#spotlights-replacement",
           "name": "Track spotlights, replacement",
           "value": true,
+          "validFrom": "2023-10-11",
+          "validThrough": "2023-11-05",
           "description": "Dozens of dimmer spotlights, each covering a smaller area of wall, fitted less than a day before the opening."
         },
         {
@@ -198,9 +153,7 @@
       "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
       "geoTouches": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
       "additionalProperty": [
-        { "@type": "PropertyValue", "name": "colour", "value": "White" },
-        { "@type": "PropertyValue", "name": "width", "value": "TODO: wall width", "unitCode": "CMT" },
-        { "@type": "PropertyValue", "name": "height", "value": "TODO: floor to ceiling", "unitCode": "CMT" }
+        { "@type": "PropertyValue", "name": "colour", "value": "White" }
       ]
     },
 
@@ -213,11 +166,6 @@
       "geoTouches": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello" },
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage" }
-      ],
-      "additionalProperty": [
-        { "@type": "PropertyValue", "name": "colour", "value": "TODO: wall colour" },
-        { "@type": "PropertyValue", "name": "width", "value": "TODO: wall width", "unitCode": "CMT" },
-        { "@type": "PropertyValue", "name": "height", "value": "TODO: floor to ceiling", "unitCode": "CMT" }
       ]
     },
 
@@ -236,8 +184,7 @@
       "name": "Itaewon",
       "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#seoul" },
       "sameAs": [
-        "https://www.wikidata.org/wiki/Q495646",
-        "TODO: GeoNames page for Itaewon"
+        "https://www.wikidata.org/wiki/Q495646"
       ]
     },
 
@@ -265,7 +212,7 @@
       "@type": "Person",
       "@id": "https://www.seungjojeong.net/#jeong",
       "name": "Seungjo Jeong",
-      "alternateName": "Joe Jeong",
+      "alternateName": "정승조",
       "jobTitle": "Artist and researcher",
       "description": "Artist and researcher based in London, with a background in software engineering. His doctoral research, 'Painting Practice as Network: The Interoperability of Contemporary Painting', reconsiders the relation between a painting and its on-screen image.",
       "url": "https://www.seungjojeong.net/",
@@ -295,7 +242,7 @@
         { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" }
       ],
       "url": "http://galerieerd.com/hello-world/",
-      "publisher": { "@type": "Organization", "name": "Galerie ERD", "url": "http://galerieerd.com/" },
+      "publisher": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
       "inLanguage": "ko"
     },
 
@@ -616,19 +563,10 @@
     },
 
     {
-      "@type": "VirtualLocation",
-      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#online",
-      "name": "\"Hello, World!\" online: photographs and video",
-      "url": "https://www.seungjojeong.net/exhibitions/hello-world/",
-      "description": "Interpretive choice. The exhibition's online documentation is treated as a second, virtual location where the exhibition can still be visited. The documentation was made on site in Seoul; this is not a statement about how the exhibition was attended in 2023."
-    },
-
-    {
       "@type": "VideoObject",
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#video-walkthrough",
       "name": "Exhibition Walkthrough: \"Hello, World!\"",
       "description": "A walk through the exhibition at Galerie ERD, filmed in 4K at 30 fps on an iPhone.",
-      "uploadDate": "TODO: YYYY-MM-DD, as shown under the video on YouTube",
       "thumbnailUrl": "https://img.youtube.com/vi/tK1X3N4FXQY/hqdefault.jpg",
       "embedUrl": "https://www.youtube.com/embed/tK1X3N4FXQY",
       "url": "https://youtu.be/tK1X3N4FXQY",
@@ -666,7 +604,6 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/hello-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" },
       "display:topEdgeBelowCeiling": { "@type": "QuantitativeValue", "maxValue": 90, "unitCode": "CMT" },
       "display:lighting": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#strip-lighting" },
@@ -681,7 +618,6 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/world-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" },
       "display:arrangement": "Rearranged for this wall: the yellow canvas at top left was swapped with the navy one, so that it would not compete with Hello on the adjacent wall to the left, and other canvases were moved to rebalance the nine colours."
     },
 
@@ -692,7 +628,6 @@
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage" },
       "display:nextTo": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#courtyard-window" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" },
       "description": "Hung right next to the window that looks out onto the gallery's courtyard (exhibition text)."
     },
 
@@ -701,8 +636,6 @@
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-look-down-look-up",
       "display:work": { "@id": "https://www.seungjojeong.net/works/look-down-look-up-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
-      "display:wall": "TODO: which wall",
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" },
       "description": "The exhibition text reads the hanging height as part of the work: where viewer and painting meet changes with the height at which it is hung."
     },
 
@@ -710,9 +643,7 @@
       "@type": "display:Display",
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-bodily-memories",
       "display:work": { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
-      "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
-      "display:wall": "TODO: which wall",
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": "TODO: height of the bottom edge above the floor", "unitCode": "CMT" }
+      "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
     }
 
   ]
@@ -854,7 +785,6 @@
   <h2>The exhibition</h2>
   <p class="meta">Galerie ERD, Seoul</p>
   <p class="meta">12 October &ndash; 5 November 2023</p>
-  <!-- Drafted from thesis Chapter 4. Revise freely. -->
   <p>The title comes from &lsquo;Hello, World!&rsquo;, the phrase programmers traditionally make a computer display when they write their first code in a new language: if the code is right, the computer greets its coder on screen. The exhibition asked whether painting, too, could take part in conversations between humans and computers.</p>
 
   <h2>The paintings</h2>
@@ -888,7 +818,6 @@
     </figure>
   </div>
 
-  <!-- Drafted from thesis Chapter 4. Revise freely. -->
   <h2>The place</h2>
   <p>The gallery is in Itaewon, often described as the most multicultural neighbourhood in Seoul. The paintings use English rather than Korean partly for that reason, and partly to answer Lawrence Weiner&rsquo;s retrospective, <em>Under the Sun</em>, then on at the Amorepacific Museum of Art nearby.</p>
 
