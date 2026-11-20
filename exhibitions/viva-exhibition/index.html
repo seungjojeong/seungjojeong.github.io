@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js): paste the snippet for seungjojeong.net here if you
+     use one, the same one as on the other pages. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no,address=no,date=no">
+
+<!--
+  ============================================================
+  VIVA EXHIBITION — documentation page
+  https://www.seungjojeong.net/exhibitions/viva-exhibition/
+
+  Images live in images/ beside this file. GitHub Pages is
+  case-sensitive, so the filenames must match exactly.
+
+  Mirage and Bodily Memories use the same IDs as on the
+  "Hello, World!" page, so the two pages describe the same
+  paintings. Keep their details identical on both.
+
+  Every placeholder is marked TODO in the JSON-LD.
+  Outstanding:
+  - Royal College of Art: which building the exhibition was in,
+    for the street address.
+  Optional: photographs of the works. The list under "The
+  paintings" can then become the photo grid used on the
+  "Hello, World!" page.
+  ============================================================
+-->
+
+<title>Viva Exhibition — Seungjo Jeong — Royal College of Art, London, 2024</title>
+<meta name="description" content="Viva Exhibition: eight paintings by Seungjo Jeong. Royal College of Art, London, 30 August 2024.">
+
+<link rel="canonical" href="https://www.seungjojeong.net/exhibitions/viva-exhibition/">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Viva Exhibition — Seungjo Jeong">
+<meta property="og:description" content="Eight paintings, Royal College of Art, London, 30 August 2024.">
+<meta property="og:image" content="https://www.seungjojeong.net/exhibitions/viva-exhibition/images/viva-exhibition-install-01.jpg">
+<meta property="og:url" content="https://www.seungjojeong.net/exhibitions/viva-exhibition/">
+
+<!--
+  Structured data. IDs on your domain's root (#jeong, #london, #rca) and
+  under /works/ are site-wide; IDs ending in a #name on this page belong
+  to this exhibition only.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "ExhibitionEvent",
+      "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition",
+      "name": "Viva Exhibition",
+      "alternateName": "Seungjo Jeong Viva Exhibition",
+      "startDate": "2024-08-30",
+      "endDate": "2024-08-30",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-01" },
+      "description": "An exhibition of eight paintings made as part of Seungjo Jeong's practice-based research at the Royal College of Art.",
+      "workFeatured": [
+        { "@id": "https://www.seungjojeong.net/works/interface-as-2020/" },
+        { "@id": "https://www.seungjojeong.net/works/interface-l-2020/" },
+        { "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/" },
+        { "@id": "https://www.seungjojeong.net/works/preloved-2022/" },
+        { "@id": "https://www.seungjojeong.net/works/frankenstein-2022/" },
+        { "@id": "https://www.seungjojeong.net/works/amy-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" }
+      ],
+      "location": { "@id": "https://www.seungjojeong.net/#rca" },
+      "performer": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "recordedIn": {
+        "@type": "CreativeWork",
+        "name": "Viva Exhibition: installation videos",
+        "url": "https://youtube.com/playlist?list=PL8gsetVr89SB6Ud9bToLXGxfizC_1TI__",
+        "creator": { "@id": "https://www.seungjojeong.net/#jeong" }
+      },
+      "url": "https://www.seungjojeong.net/exhibitions/viva-exhibition/"
+    },
+
+    {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://www.seungjojeong.net/#rca",
+      "name": "Royal College of Art",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "TODO: street address of the building the exhibition was in",
+        "addressLocality": "London",
+        "addressCountry": "GB"
+      },
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/#london" },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q1753535",
+        "https://www.rca.ac.uk/"
+      ]
+    },
+
+    {
+      "@type": "City",
+      "@id": "https://www.seungjojeong.net/#london",
+      "name": "London",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q84",
+        "https://www.geonames.org/2643743"
+      ]
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://www.seungjojeong.net/#jeong",
+      "name": "Seungjo Jeong",
+      "alternateName": "정승조",
+      "url": "https://www.seungjojeong.net/",
+      "alumniOf": { "@id": "https://www.seungjojeong.net/#rca" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/interface-as-2020/",
+      "name": "Interface AS",
+      "dateCreated": "2020",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "height": { "@type": "QuantitativeValue", "value": 130, "unitCode": "CMT" },
+      "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/interface-l-2020/",
+      "name": "Interface L",
+      "dateCreated": "2020",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Six parts; 180 x 120 cm overall.",
+      "height": { "@type": "QuantitativeValue", "value": 180, "unitCode": "CMT" },
+      "width": { "@type": "QuantitativeValue", "value": 120, "unitCode": "CMT" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/",
+      "name": "Interface Shipping",
+      "dateCreated": "2021",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Two parts, each 50 x 40 cm.",
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/#panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/#panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" }
+        }
+      ],
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/preloved-2022/",
+      "name": "Preloved",
+      "dateCreated": "2022",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Painted on a canvas sewn from linen offcuts. Its subject is the old CRT television.",
+      "height": { "@type": "QuantitativeValue", "value": 55, "unitCode": "CMT" },
+      "width": { "@type": "QuantitativeValue", "value": 75, "unitCode": "CMT" },
+      "depth": { "@type": "QuantitativeValue", "value": 3.6, "unitCode": "CMT" },
+      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/frankenstein-2022/",
+      "name": "Frankenstein",
+      "dateCreated": "2022",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Three parts, each 91 x 41 cm. It depicts the school locker the artist used at the School of the Art Institute of Chicago, reconstructing the painted images of Interface L3 (2014) on a canvas sewn from linen offcuts.",
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/frankenstein-2022/#panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 91, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 41, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/frankenstein-2022/#panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 91, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 41, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/frankenstein-2022/#panel-3",
+          "height": { "@type": "QuantitativeValue", "value": 91, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 41, "unitCode": "CMT" }
+        }
+      ],
+      "isBasedOn": {
+        "@type": "VisualArtwork",
+        "@id": "https://www.seungjojeong.net/works/interface-l3-2014/",
+        "name": "Interface L3",
+        "dateCreated": "2014",
+        "creator": { "@id": "https://www.seungjojeong.net/#jeong" }
+      },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/amy-2023/",
+      "name": "Amy",
+      "dateCreated": "2023",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Five parts; 160 x 180 cm overall. Its subject is the Amazon Locker.",
+      "height": { "@type": "QuantitativeValue", "value": 160, "unitCode": "CMT" },
+      "width": { "@type": "QuantitativeValue", "value": 180, "unitCode": "CMT" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/mirage-2023/",
+      "name": "Mirage",
+      "dateCreated": "2023",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Two parts, each 50 x 40 cm.",
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        }
+      ],
+      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/",
+      "name": "Bodily Memories",
+      "dateCreated": "2023",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Three parts, each 90 x 50 cm. Its subject is videotape. Metallic pigments make the colour and value shift with the light and the viewing angle.",
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 90, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 90, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-3",
+          "height": { "@type": "QuantitativeValue", "value": 90, "unitCode": "CMT" },
+          "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
+        }
+      ],
+      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
+      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-01",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/viva-exhibition/images/viva-exhibition-install-01.jpg",
+      "description": "Looking into a gallery with a pitched, skylit ceiling and a concrete floor. On the left wall, Bodily Memories hangs beside a tall window; on the right wall, the yellow letter forms of Amy, H and i, sit between the two small diptychs Interface Shipping and Mirage.",
+      "about": [
+        { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/" },
+        { "@id": "https://www.seungjojeong.net/works/amy-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" }
+      ],
+      "contentLocation": { "@id": "https://www.seungjojeong.net/#rca" },
+      "license": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2024 Seungjo Jeong",
+      "representativeOfPage": true
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-02",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/viva-exhibition/images/viva-exhibition-install-02.jpg",
+      "description": "The wall with Amy, seen straight on. In the centre, the five yellow panels of Amy form the letters H and i; Interface Shipping hangs to the left and Mirage to the right.",
+      "about": [
+        { "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/" },
+        { "@id": "https://www.seungjojeong.net/works/amy-2023/" },
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" }
+      ],
+      "contentLocation": { "@id": "https://www.seungjojeong.net/#rca" },
+      "license": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2024 Seungjo Jeong"
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-03",
+      "contentUrl": "https://www.seungjojeong.net/exhibitions/viva-exhibition/images/viva-exhibition-install-03.jpg",
+      "description": "A white wall above a concrete floor. On the left, Interface L: six purple-edged panels in two staggered rows, linen above and pale blue below. In the centre, the three green panels of Frankenstein. On the right, Preloved, whose subject is an old CRT television.",
+      "about": [
+        { "@id": "https://www.seungjojeong.net/works/interface-l-2020/" },
+        { "@id": "https://www.seungjojeong.net/works/frankenstein-2022/" },
+        { "@id": "https://www.seungjojeong.net/works/preloved-2022/" }
+      ],
+      "contentLocation": { "@id": "https://www.seungjojeong.net/#rca" },
+      "license": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
+      "acquireLicensePage": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "copyrightNotice": "© 2024 Seungjo Jeong"
+    }
+
+  ]
+}
+</script>
+
+<style>
+  :root {
+    /* The same warm graphite as the other pages. */
+    --ink: #f2f0ec;
+    --paper: #262320;
+    --rule: #4a4540;
+    --quiet: #a39c93;
+    --measure: 34rem;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.0625rem/1.65 Charter, "Iowan Old Style", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 5rem 1.5rem 7rem; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 2.5rem;
+           margin-bottom: 3.5rem; max-width: var(--measure); }
+  h1 {
+    font-size: clamp(2rem, 5.5vw, 3.25rem);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.25rem;
+  }
+  .byline { font-size: 1.0625rem; margin: 0 0 0.4rem; }
+  .meta { color: var(--quiet); font-size: 0.9375rem; margin: 0 0 0.25rem; }
+  .meta + p:not(.meta) { margin-top: 1.25rem; }
+  h2 {
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    color: var(--quiet);
+    margin: 4.5rem 0 1.5rem;
+  }
+  p { max-width: var(--measure); margin: 0 0 1.25rem; }
+  a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 0.2em; }
+  a:hover { text-decoration-color: var(--ink); }
+
+  figure { margin: 0; }
+  figure img { width: 100%; height: auto; display: block; background: var(--paper); }
+  figcaption { font-size: 0.875rem; line-height: 1.5; color: var(--quiet); margin-top: 0.95rem; }
+  figcaption .t { font-style: italic; color: var(--ink); }
+
+  /* the works, listed by caption until there are photographs of each;
+     the photo grid from the "Hello, World!" page can replace this list */
+  .checklist { list-style: none; margin: 0; padding: 0; max-width: 40rem; }
+  .checklist li { margin: 0 0 0.6rem; scroll-margin-top: 2rem; }
+  .checklist .t { font-style: italic; }
+
+  /* installation views, full width while there is one; add a second
+     column (grid-template-columns: 1fr 1fr) once there are more */
+  .installs { display: grid; grid-template-columns: 1fr; gap: 3rem 2rem; margin: 0; }
+
+  .rel { font-size:0.8125rem; line-height:1.5; color:var(--quiet); margin-top:0.45rem; }
+  .rel a { color:inherit; }
+
+  footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.875rem; color: var(--quiet); }
+
+  /* Click to enlarge. The anchor wraps the image so this works without
+     JavaScript too, in which case the browser simply opens the file. */
+  a.zoom { display: block; cursor: zoom-in; }
+  a.zoom:focus-visible { outline: 2px solid var(--quiet); outline-offset: 3px; }
+  #lightbox {
+    position: fixed; inset: 0; z-index: 50;
+    display: none; place-items: center;
+    background: rgba(16, 14, 12, 0.94);
+    padding: 2.5rem 1.5rem; cursor: zoom-out;
+  }
+  #lightbox.open { display: grid; }
+  #lightbox figure { margin: 0; display: flex; flex-direction: column;
+                     align-items: center; gap: 1rem; max-height: 100%; }
+  #lightbox img { max-width: 100%; max-height: calc(100vh - 8rem);
+                  width: auto; height: auto; object-fit: contain; }
+  #lightbox figcaption { color: var(--quiet); font-size: 0.8125rem;
+                         text-align: center; max-width: 40rem; margin: 0;
+                         line-height: 1.6; }
+  #lightbox figcaption .t { font-style: italic; color: var(--ink);
+                            font-size: 1rem; }
+  #lightbox button {
+    position: absolute; top: 1rem; right: 1.25rem;
+    background: none; border: 0; color: var(--quiet);
+    font: inherit; font-size: 1.5rem; line-height: 1; cursor: pointer;
+    padding: 0.25rem 0.5rem;
+  }
+  #lightbox button:hover, #lightbox button:focus-visible { color: var(--ink); }
+  @media (max-width: 34rem) {
+    #lightbox { padding: 3rem 0.5rem 1.5rem; }
+    #lightbox img { max-height: calc(100vh - 7rem); }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #lightbox.open img { animation: zoomin 0.18s ease-out; }
+    @keyframes zoomin { from { opacity: 0; transform: scale(0.98); } }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Viva Exhibition</h1>
+    <p class="byline">Seungjo Jeong</p>
+  </header>
+
+  <h2>The exhibition</h2>
+  <p class="meta">Royal College of Art, London</p>
+  <p class="meta">30 August 2024</p>
+  <p>Eight paintings made as part of his practice-based research at the Royal College of Art.</p>
+
+  <h2>The paintings</h2>
+  <ul class="checklist">
+    <li id="jeong-interface-as"><span class="t">Interface AS</span>, 2020 &middot; 130 &times; 50 cm &middot; acrylic on linen</li>
+    <li id="jeong-interface-l"><span class="t">Interface L</span>, 2020 &middot; 180 &times; 120 cm overall, 6 parts &middot; acrylic on linen</li>
+    <li id="jeong-interface-shipping"><span class="t">Interface Shipping</span>, 2021 &middot; 50 &times; 40 cm each, 2 parts &middot; acrylic on linen</li>
+    <li id="jeong-preloved"><span class="t">Preloved</span>, 2022 &middot; 55 &times; 75 cm &middot; acrylic on linen</li>
+    <li id="jeong-frankenstein"><span class="t">Frankenstein</span>, 2022 &middot; 91 &times; 41 cm each, 3 parts &middot; acrylic on linen</li>
+    <li id="jeong-amy"><span class="t">Amy</span>, 2023 &middot; 160 &times; 180 cm overall, 5 parts &middot; acrylic on linen</li>
+    <li id="jeong-mirage"><span class="t">Mirage</span>, 2023 &middot; 50 &times; 40 cm each, 2 parts &middot; acrylic on linen &middot; also shown in <a href="../hello-world/#jeong-mirage">&ldquo;Hello, World!&rdquo;</a></li>
+    <li id="jeong-bodily-memories"><span class="t">Bodily Memories</span>, 2023 &middot; 90 &times; 50 cm each, 3 parts &middot; acrylic on linen &middot; also shown in <a href="../hello-world/#jeong-bodily-memories">&ldquo;Hello, World!&rdquo;</a></li>
+  </ul>
+
+  <h2>Installation views</h2>
+  <div class="installs" data-caption="Installation view, <span class=&quot;t&quot;>Viva Exhibition</span>, Royal College of Art, London, 2024.">
+    <figure>
+      <a class="zoom" href="images/viva-exhibition-install-01.jpg"><img src="images/viva-exhibition-install-01.jpg"
+           alt="Looking into a gallery with a pitched, skylit ceiling and a concrete floor. On the left wall, Bodily Memories hangs beside a tall window; on the right wall, the yellow letter forms of Amy, H and i, sit between the two small diptychs Interface Shipping and Mirage."></a>
+    </figure>
+    <figure>
+      <a class="zoom" href="images/viva-exhibition-install-02.jpg"><img src="images/viva-exhibition-install-02.jpg" loading="lazy"
+           alt="The wall with Amy, seen straight on. In the centre, the five yellow panels of Amy form the letters H and i; Interface Shipping hangs to the left and Mirage to the right."></a>
+    </figure>
+    <figure>
+      <a class="zoom" href="images/viva-exhibition-install-03.jpg"><img src="images/viva-exhibition-install-03.jpg" loading="lazy"
+           alt="A white wall above a concrete floor. On the left, Interface L: six purple-edged panels in two staggered rows, linen above and pale blue below. In the centre, the three green panels of Frankenstein. On the right, Preloved, whose subject is an old CRT television."></a>
+    </figure>
+  </div>
+
+  <h2>Installation videos</h2>
+  <p><a href="https://youtube.com/playlist?list=PL8gsetVr89SB6Ud9bToLXGxfizC_1TI__">YouTube playlist</a></p>
+
+  <footer>
+    <p>Works and photographs &copy; Seungjo Jeong. See <a href="rights.html">rights and permissions</a>.</p>
+  </footer>
+
+</div>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image" hidden>
+  <button type="button" aria-label="Close">&times;</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+</div>
+
+<script>
+(function () {
+  var box = document.getElementById('lightbox');
+  var img = box.querySelector('img');
+  var cap = box.querySelector('figcaption');
+  var shut = box.querySelector('button');
+  var last = null;
+
+  function open(link) {
+    var source = link.querySelector('img');
+    img.src = link.getAttribute('href');
+    img.alt = source ? source.alt : '';
+    var figure = link.closest('figure');
+    var text = figure && figure.querySelector('figcaption');
+    // the caption's own markup is reused rather than its text, so the
+    // italic on the work's title survives into the enlarged view
+    var html = text ? text.innerHTML.trim() : '';
+
+    // installation views share a caption declared on the grid; a figure's
+    // own caption, where it has one, follows it
+    var group = figure && figure.closest('[data-caption]');
+    if (group) html = html ? group.getAttribute('data-caption') + ' ' + html : group.getAttribute('data-caption');
+
+    cap.innerHTML = html;
+    box.hidden = false;
+    box.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    last = link;
+    shut.focus();
+  }
+
+  function close() {
+    box.classList.remove('open');
+    box.hidden = true;
+    img.removeAttribute('src');
+    document.body.style.overflow = '';
+    if (last) { last.focus(); last = null; }
+  }
+
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest ? e.target.closest('a.zoom') : null;
+    if (link) {                      // plain left-click only: let the reader
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();            // still open the file in a new tab
+      open(link);
+      return;
+    }
+    if (box.classList.contains('open')) close();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && box.classList.contains('open')) close();
+  });
+})();
+</script>
+</body>
+</html>
