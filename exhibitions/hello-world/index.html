@@ -199,6 +199,15 @@
     },
 
     {
+      "@type": "ExhibitionEvent",
+      "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition",
+      "name": "Viva Exhibition",
+      "startDate": "2024-08-30",
+      "endDate": "2024-08-30",
+      "url": "https://www.seungjojeong.net/exhibitions/viva-exhibition/"
+    },
+
+    {
       "@type": "City",
       "@id": "https://www.seungjojeong.net/#london",
       "name": "London",
@@ -318,7 +327,10 @@
       ],
       "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
       "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-mirage" },
-      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+      "subjectOf": [
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+      ]
     },
 
     {
@@ -374,7 +386,10 @@
       ],
       "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
       "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-bodily-memories" },
-      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+      "subjectOf": [
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+      ]
     },
 
     {
@@ -629,6 +644,7 @@
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage" },
       "display:nextTo": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#courtyard-window" },
+      "display:arrangement": "The panel with the painted frame on the left, the linen panel with the blue shape on the right.",
       "description": "Hung right next to the window that looks out onto the gallery’s courtyard (exhibition text)."
     },
 
@@ -644,7 +660,8 @@
       "@type": "display:Display",
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-bodily-memories",
       "display:work": { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
-      "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+      "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "display:arrangement": "Panels in the order white, gold, black, from left to right, as photographed at Galerie ERD."
     }
 
   ]
