@@ -413,7 +413,11 @@
         { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
         { "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/" },
         { "@id": "https://www.seungjojeong.net/works/amy-2023/" },
-        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" }
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-bodily-memories" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-interface-shipping" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-amy" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-mirage" }
       ],
       "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#bridge-studio" },
       "license": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
@@ -432,7 +436,10 @@
       "about": [
         { "@id": "https://www.seungjojeong.net/works/interface-l-2020/" },
         { "@id": "https://www.seungjojeong.net/works/frankenstein-2022/" },
-        { "@id": "https://www.seungjojeong.net/works/preloved-2022/" }
+        { "@id": "https://www.seungjojeong.net/works/preloved-2022/" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-interface-l" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-frankenstein" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-preloved" }
       ],
       "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#bridge-studio" },
       "license": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
@@ -451,7 +458,10 @@
       "about": [
         { "@id": "https://www.seungjojeong.net/works/interface-as-2020/" },
         { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
-        { "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/" }
+        { "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-interface-as" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-bodily-memories" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-interface-shipping" }
       ],
       "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#bridge-studio" },
       "license": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
@@ -469,7 +479,10 @@
       "about": [
         { "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/" },
         { "@id": "https://www.seungjojeong.net/works/amy-2023/" },
-        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" }
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-interface-shipping" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-amy" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-mirage" }
       ],
       "contentLocation": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#bridge-studio" },
       "license": "https://www.seungjojeong.net/exhibitions/viva-exhibition/rights.html",
@@ -490,6 +503,9 @@
   its own record rather than on the painting: Mirage and Bodily Memories
   also have records on the "Hello, World!" page, and the two describe
   different hangings without contradicting each other.
+  Each estimated height names the photograph it was read from
+  (display:estimatedFrom), and each photograph of the hanging lists,
+  under "about" in block 1, the records here that it shows.
   Terms starting "display:" are defined at
   https://www.seungjojeong.net/ns/display
   Kept in a separate block so that if any tool can't read it, block 1 is
@@ -509,7 +525,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/interface-as-2020/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#wall-window" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 63, "minValue": 58, "maxValue": 68, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the scale taken from Bodily Memories on the same wall." },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 63, "minValue": 58, "maxValue": 68, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the scale taken from Bodily Memories on the same wall.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-04" } },
       "display:nextTo": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#window-left" }
     },
 
@@ -519,7 +535,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/interface-l-2020/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#wall-interface-l" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 33, "minValue": 28, "maxValue": 38, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 33, "minValue": 28, "maxValue": 38, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-03" } },
       "display:nextTo": { "@id": "https://www.seungjojeong.net/works/frankenstein-2022/" },
       "display:arrangement": "Six panels in two staggered rows: three linen-coloured panels above, three pale blue below."
     },
@@ -530,7 +546,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/frankenstein-2022/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#wall-interface-l" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 88, "minValue": 83, "maxValue": 93, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 88, "minValue": 83, "maxValue": 93, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-03" } },
       "display:nextTo": [
         { "@id": "https://www.seungjojeong.net/works/interface-l-2020/" },
         { "@id": "https://www.seungjojeong.net/works/preloved-2022/" }
@@ -544,7 +560,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/preloved-2022/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#wall-interface-l" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 117, "minValue": 112, "maxValue": 122, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 117, "minValue": 112, "maxValue": 122, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-03" } },
       "display:nextTo": { "@id": "https://www.seungjojeong.net/works/frankenstein-2022/" }
     },
 
@@ -554,7 +570,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#wall-amy" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 121, "minValue": 116, "maxValue": 126, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 121, "minValue": 116, "maxValue": 126, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-02" } },
       "display:nextTo": { "@id": "https://www.seungjojeong.net/works/amy-2023/" },
       "display:arrangement": "The panel with the painted frame on the left, the linen panel with the blue shape on the right."
     },
@@ -565,7 +581,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/amy-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#wall-amy" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 44, "minValue": 39, "maxValue": 49, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 44, "minValue": 39, "maxValue": 49, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-02" } },
       "display:nextTo": [
         { "@id": "https://www.seungjojeong.net/works/interface-shipping-2021/" },
         { "@id": "https://www.seungjojeong.net/works/mirage-2023/" }
@@ -579,7 +595,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/mirage-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#wall-amy" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 120, "minValue": 115, "maxValue": 125, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 120, "minValue": 115, "maxValue": 125, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-02" } },
       "display:nextTo": { "@id": "https://www.seungjojeong.net/works/amy-2023/" },
       "display:arrangement": "The panel with the painted frame on the left, the linen panel with the blue shape on the right: the same order as at Galerie ERD."
     },
@@ -590,7 +606,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#wall-window" },
-      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 89, "minValue": 84, "maxValue": 94, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 89, "minValue": 84, "maxValue": 94, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#img-install-04" } },
       "display:nextTo": [
         { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#window-left" },
         { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#window" }

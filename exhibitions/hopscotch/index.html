@@ -149,9 +149,14 @@
       "contentUrl": "https://www.seungjojeong.net/exhibitions/hopscotch/images/hopscotch-install-01.jpg",
       "description": "The gallery under a pitched roof with skylights and spotlights on steel trusses: works by other research students on the long wall at left and on a table and plinth, a large striped textile cone hanging in the foreground, and Amy on the far wall, with a screen to its right.",
       "dateCreated": "2023-06-23",
-      "about": {
-        "@id": "https://www.seungjojeong.net/works/amy-2023/"
-      },
+      "about": [
+        {
+          "@id": "https://www.seungjojeong.net/works/amy-2023/"
+        },
+        {
+          "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#display-amy"
+        }
+      ],
       "contentLocation": {
         "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#copeland-gallery"
       },
@@ -171,9 +176,14 @@
       "contentUrl": "https://www.seungjojeong.net/exhibitions/hopscotch/images/hopscotch-install-02.jpg",
       "description": "Amy straight on: five yellow and orange panels with bands of bare linen forming the letters H and i on a white wall above a concrete floor, with a wall label to the right.",
       "dateCreated": "2023-06-23",
-      "about": {
-        "@id": "https://www.seungjojeong.net/works/amy-2023/"
-      },
+      "about": [
+        {
+          "@id": "https://www.seungjojeong.net/works/amy-2023/"
+        },
+        {
+          "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#display-amy"
+        }
+      ],
       "contentLocation": {
         "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#copeland-gallery"
       },
@@ -192,9 +202,14 @@
       "contentUrl": "https://www.seungjojeong.net/exhibitions/hopscotch/images/hopscotch-install-03.jpg",
       "description": "Amy seen at an angle along its wall, with a work by another student lit on the far wall at left.",
       "dateCreated": "2023-06-23",
-      "about": {
-        "@id": "https://www.seungjojeong.net/works/amy-2023/"
-      },
+      "about": [
+        {
+          "@id": "https://www.seungjojeong.net/works/amy-2023/"
+        },
+        {
+          "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#display-amy"
+        }
+      ],
       "contentLocation": {
         "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#copeland-gallery"
       },
@@ -280,6 +295,9 @@
   How Amy was hung in this exhibition, in a record of its own; Amy also
   has one on the Viva page, describing a different hanging. The height and
   the joining panel's position are estimates read from the photographs.
+  Each estimated height names the photograph it was read from
+  (display:estimatedFrom), and each photograph of the hanging lists,
+  under "about" in block 1, the records here that it shows.
   Terms starting "display:" are defined at
   https://www.seungjojeong.net/ns/display
   Kept in a separate block so that if any tool can't read it, block 1 is
@@ -311,7 +329,10 @@
         "minValue": 42,
         "maxValue": 52,
         "unitCode": "CMT",
-        "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale (installation view 02)."
+        "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale (installation view 02).",
+        "display:estimatedFrom": {
+          "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#img-install-02"
+        }
       },
       "display:arrangement": "Five panels hung as the letters H and i: two tall columns joined by a smaller panel form the H, and a square panel above a tall one forms the i. The H’s left column ended in an orange band and its right column in a band of bare linen: the other way round from the Viva Exhibition (2024). The joining panel sat lower than at the Viva, its top about 50 cm below the tops of the columns, against about 30 cm at the Viva (both estimated from the photographs)."
     }
