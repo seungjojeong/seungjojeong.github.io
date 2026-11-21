@@ -40,7 +40,7 @@
     },
     {
       "@id": "display:Display",
-      "@type": "rdfs:Class",
+      "@type": ["rdfs:Class", "schema:Class"],
       "rdfs:label": "Display",
       "rdfs:comment": "One work as hung in one exhibition. Its properties describe that hanging: the wall, what hung beside it, how its parts were arranged, how high it hung and how it was lit. A work shown in two exhibitions has two Display records, which can differ without contradicting each other.",
       "rdfs:isDefinedBy": {
@@ -52,7 +52,7 @@
     },
     {
       "@id": "display:work",
-      "@type": "rdf:Property",
+      "@type": ["rdf:Property", "schema:Property"],
       "rdfs:label": "work",
       "rdfs:comment": "The work that was hung. Every Display has exactly one.",
       "rdfs:isDefinedBy": {
@@ -72,7 +72,7 @@
     },
     {
       "@id": "display:exhibition",
-      "@type": "rdf:Property",
+      "@type": ["rdf:Property", "schema:Property"],
       "rdfs:label": "exhibition",
       "rdfs:comment": "The exhibition in which it was hung, or one showing of an exhibition that toured, when the hangings differed between venues. Every Display has exactly one.",
       "rdfs:isDefinedBy": {
@@ -92,7 +92,7 @@
     },
     {
       "@id": "display:wall",
-      "@type": "rdf:Property",
+      "@type": ["rdf:Property", "schema:Property"],
       "rdfs:label": "wall",
       "rdfs:comment": "The wall it hung on, described as a Place within the room.",
       "rdfs:isDefinedBy": {
@@ -112,7 +112,7 @@
     },
     {
       "@id": "display:nextTo",
-      "@type": "rdf:Property",
+      "@type": ["rdf:Property", "schema:Property"],
       "rdfs:label": "nextTo",
       "rdfs:comment": "What hung or stood beside it: another work, or a feature of the room such as a window. It says nothing about direction; the order along a wall is given in the wall's description.",
       "rdfs:isDefinedBy": {
@@ -132,7 +132,7 @@
     },
     {
       "@id": "display:arrangement",
-      "@type": "rdf:Property",
+      "@type": ["rdf:Property", "schema:Property"],
       "rdfs:label": "arrangement",
       "rdfs:comment": "How its parts were arranged on the wall for this exhibition, in words: the order of the panels, or how a polyptych was laid out.",
       "rdfs:isDefinedBy": {
@@ -149,7 +149,7 @@
     },
     {
       "@id": "display:lighting",
-      "@type": "rdf:Property",
+      "@type": ["rdf:Property", "schema:Property"],
       "rdfs:label": "lighting",
       "rdfs:comment": "The lighting in the room that fell on it, as one of the room's features.",
       "rdfs:isDefinedBy": {
@@ -166,7 +166,7 @@
     },
     {
       "@id": "display:bottomEdgeAboveFloor",
-      "@type": "rdf:Property",
+      "@type": ["rdf:Property", "schema:Property"],
       "rdfs:label": "bottomEdgeAboveFloor",
       "rdfs:comment": "The height of its lowest edge above the floor, in centimetres (unitCode CMT).",
       "rdfs:isDefinedBy": {
@@ -183,7 +183,7 @@
     },
     {
       "@id": "display:topEdgeBelowCeiling",
-      "@type": "rdf:Property",
+      "@type": ["rdf:Property", "schema:Property"],
       "rdfs:label": "topEdgeBelowCeiling",
       "rdfs:comment": "The distance from its top edge to the ceiling, in centimetres (unitCode CMT). Use maxValue when only an upper limit is known.",
       "rdfs:isDefinedBy": {

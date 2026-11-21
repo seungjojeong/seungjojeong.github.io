@@ -19,7 +19,10 @@
 
 <!--
   Structured data. https://www.seungjojeong.net/#jeong is the ID the
-  exhibition pages use for the artist: this page is where it resolves.
+  exhibition pages use for the artist: this page is where it resolves, and
+  it holds the artist's only full record. Other pages give the artist just
+  a name and address, so the record never needs keeping in step. The two
+  colleges (#saic, #rca) and London (#london) have site-wide IDs too.
 -->
 <script type="application/ld+json">
 {
@@ -40,12 +43,12 @@
       "name": "Seungjo Jeong",
       "alternateName": "정승조",
       "jobTitle": "Artist and researcher",
-      "description": "Artist and researcher based in London, with a background in software engineering. His doctoral research, 'Painting Practice as Network: The Interoperability of Contemporary Painting', reconsiders the relation between a painting and its on-screen image.",
+      "description": "Artist and researcher based in London, with a background in software engineering. His doctoral research, ‘Painting Practice as Network: The Interoperability of Contemporary Painting’, reconsiders the relation between a painting and its on-screen image.",
       "url": "https://www.seungjojeong.net/",
       "email": "enquiries@seungjojeong.com",
       "alumniOf": [
-        { "@type": "CollegeOrUniversity", "name": "School of the Art Institute of Chicago" },
-        { "@type": "CollegeOrUniversity", "name": "Royal College of Art" }
+        { "@id": "https://www.seungjojeong.net/#saic" },
+        { "@id": "https://www.seungjojeong.net/#rca" }
       ],
       "award": [
         "British Institution Awards for Students, Royal Academy of Arts, London (2019)",
@@ -58,10 +61,36 @@
         { "@id": "https://www.threepainterprotocol.net/#exhibition" }
       ],
       "sameAs": [
+        "https://orcid.org/0000-0002-6633-8114",
         "https://www.rca.ac.uk/research-innovation/research-degrees/research-students/seungjo-jeong/",
         "https://www.instagram.com/seungjo.jeong/",
         "https://www.youtube.com/@seungjojeong",
         "https://www.threepainterprotocol.net/#jeong"
+      ]
+    },
+
+    {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://www.seungjojeong.net/#saic",
+      "name": "School of the Art Institute of Chicago",
+      "sameAs": ["https://www.wikidata.org/wiki/Q7432601", "https://www.saic.edu/"]
+    },
+
+    {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://www.seungjojeong.net/#rca",
+      "name": "Royal College of Art",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/#london" },
+      "sameAs": ["https://www.wikidata.org/wiki/Q1753535", "https://www.rca.ac.uk/"]
+    },
+
+    {
+      "@type": "City",
+      "@id": "https://www.seungjojeong.net/#london",
+      "name": "London",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q84",
+        "https://www.geonames.org/2643743"
       ]
     }
 

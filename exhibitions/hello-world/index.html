@@ -21,10 +21,11 @@
 
 <!--
   Structured data, block 1 of 2: Schema.org only.
-  IDs on the site root (#jeong, #london) are site-wide. Each painting has
-  its own page at its /works/ address, which holds its full record; here
-  it is given only its name, date and image. IDs ending in a #name on this
-  page belong to this exhibition only.
+  IDs on the site root (#jeong, #london) are site-wide. The artist's full
+  record is on the home page; here the artist has only a name and address.
+  Each painting has its own page at its /works/ address, which holds its
+  full record; here it is given only its name, date and image. IDs ending
+  in a #name on this page belong to this exhibition only.
 -->
 <script type="application/ld+json">
 {
@@ -93,6 +94,13 @@
         },
         {
           "@type": "LocationFeatureSpecification",
+          "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#ceiling-height",
+          "name": "Ceiling height",
+          "value": 2.7,
+          "unitCode": "MTR"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
           "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#skylights",
           "name": "Skylights",
           "value": true,
@@ -150,10 +158,11 @@
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello",
       "name": "Main wall",
       "description": "The gallery’s main wall, on which Hello (2023) hung. Adjacent to the wall carrying , World! (2023): on the left, as seen facing , World!.",
-      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#main-room" },
       "geoTouches": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
       "additionalProperty": [
-        { "@type": "PropertyValue", "name": "colour", "value": "White" }
+        { "@type": "PropertyValue", "name": "colour", "value": "White" },
+        { "@type": "PropertyValue", "name": "length", "value": 7.6, "unitCode": "MTR" }
       ]
     },
 
@@ -162,10 +171,13 @@
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world",
       "name": "Wall on which , World! (2023) hung",
       "description": "Shorter than the 8 m a letter-form version of , World! would have needed, which led to the keyboard design. Hello (2023) hung on the adjacent main wall, to its left; Mirage (2023) on the adjacent wall to its right.",
-      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#main-room" },
       "geoTouches": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello" },
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage" }
+      ],
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "length", "value": 5.4, "unitCode": "MTR" }
       ]
     },
 
@@ -174,8 +186,49 @@
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage",
       "name": "Wall with the courtyard window",
       "description": "Adjacent to the wall carrying , World! (2023): on the right, as seen facing , World!. Mirage (2023) hung on it, beside the window.",
-      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
-      "geoTouches": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" }
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#main-room" },
+      "geoTouches": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "length", "value": 2.7, "unitCode": "MTR", "description": "The stretch of wall beside the window, on which Mirage (2023) hung; the window continues the same wall." }
+      ]
+    },
+
+    {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#main-room",
+      "name": "Main room",
+      "description": "The gallery’s larger room, with the window onto the courtyard and the entrance. Hello (2023), , World! (2023) and Mirage (2023) hung here.",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" }
+    },
+
+    {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#small-room",
+      "name": "Small room",
+      "description": "The gallery’s smaller room, opening off the main room. Bodily Memories (2023) and Look Down, Look Up! (2023) hung here.",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" }
+    },
+
+    {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-look-down-look-up",
+      "name": "Wall on which Look Down, Look Up! (2023) hung",
+      "description": "The longest wall of the small room. It does not meet the wall carrying Bodily Memories (2023): the room’s 5.3 m wall runs between them.",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#small-room" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "length", "value": 6, "unitCode": "MTR" }
+      ]
+    },
+
+    {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-bodily-memories",
+      "name": "Wall on which Bodily Memories (2023) hung",
+      "description": "A wall of the small room. It does not meet the wall carrying Look Down, Look Up! (2023): the room’s 5.3 m wall runs between them.",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#small-room" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "length", "value": 4.8, "unitCode": "MTR" }
+      ]
     },
 
     {
@@ -213,19 +266,7 @@
       "@id": "https://www.seungjojeong.net/#jeong",
       "name": "Seungjo Jeong",
       "alternateName": "정승조",
-      "jobTitle": "Artist and researcher",
-      "description": "Artist and researcher based in London, with a background in software engineering. His doctoral research, ‘Painting Practice as Network: The Interoperability of Contemporary Painting’, reconsiders the relation between a painting and its on-screen image.",
-      "url": "https://www.seungjojeong.net/",
-      "alumniOf": [
-        { "@type": "CollegeOrUniversity", "name": "School of the Art Institute of Chicago" },
-        { "@type": "CollegeOrUniversity", "name": "Royal College of Art" }
-      ],
-      "sameAs": [
-        "https://orcid.org/0000-0002-6633-8114",
-        "https://www.rca.ac.uk/research-innovation/research-degrees/research-students/seungjo-jeong/",
-        "https://www.instagram.com/seungjo.jeong/",
-        "https://www.threepainterprotocol.net/#jeong"
-      ]
+      "url": "https://www.seungjojeong.net/"
     },
 
     {
@@ -570,6 +611,7 @@
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-look-down-look-up",
       "display:work": { "@id": "https://www.seungjojeong.net/works/look-down-look-up-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-look-down-look-up" },
       "description": "The exhibition text reads the hanging height as part of the work: where viewer and painting meet changes with the height at which it is hung."
     },
 
@@ -578,6 +620,7 @@
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#display-bodily-memories",
       "display:work": { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
+      "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-bodily-memories" },
       "display:arrangement": "Panels in the order white, gold, black, from left to right, as photographed at Galerie ERD."
     }
 
