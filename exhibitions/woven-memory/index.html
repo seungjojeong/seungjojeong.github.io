@@ -18,12 +18,12 @@
 <meta property="og:url" content="https://www.seungjojeong.net/exhibitions/woven-memory/">
 
 <!--
-  Structured data. IDs on the site root (#jeong) are site-wide; Seoul uses
-  the ID first given on the "Hello, World!" page. Each painting has its own
-  page at its /works/ address, which holds its full record; here it is
-  given only its name, date and image. IDs ending in a #name on this page
-  belong to this exhibition only. Two paintings on the site are titled
-  Preloved (2022): the one shown here is /works/preloved-2022-b/.
+  Structured data. IDs on the site root (#jeong, #seoul) are site-wide.
+  Each painting has its own page at its /works/ address, which holds its
+  full record; here it is given only its name, date and image. IDs ending
+  in a #name on this page belong to this exhibition only. Two paintings on
+  the site are titled Preloved (2022): the one shown here is
+  /works/preloved-2022-b/.
 -->
 <script type="application/ld+json">
 {
@@ -113,6 +113,7 @@
       "@id": "https://www.seungjojeong.net/exhibitions/woven-memory/#art-space-hyeong",
       "name": "Art Space HYEONG",
       "alternateName": "공간형",
+      "description": "Art Space HYEONG as it was at the time of the exhibition (2022), at its premises in Euljiro. The gallery has since moved to another part of Seoul.",
       "url": "https://sites.google.com/view/artspacehyeong",
       "address": {
         "@type": "PostalAddress",
@@ -129,7 +130,7 @@
         }
       ],
       "containedInPlace": {
-        "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#seoul"
+        "@id": "https://www.seungjojeong.net/exhibitions/woven-memory/#euljiro"
       }
     },
 
@@ -433,8 +434,20 @@
     },
 
     {
+      "@type": "Place",
+      "@id": "https://www.seungjojeong.net/exhibitions/woven-memory/#euljiro",
+      "name": "Euljiro",
+      "containedInPlace": {
+        "@id": "https://www.seungjojeong.net/#seoul"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q483304"
+      ]
+    },
+
+    {
       "@type": "City",
-      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#seoul",
+      "@id": "https://www.seungjojeong.net/#seoul",
       "name": "Seoul",
       "sameAs": [
         "https://www.wikidata.org/wiki/Q8684",
