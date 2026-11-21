@@ -18,7 +18,10 @@
   Structured data. This page is the painting's full record: exhibition
   pages give only its name, date and image, and point here. Panel numbers
   are labels, not a hanging order; how the panels were hung in each
-  exhibition is on that exhibition's page. The painting's subject is
+  exhibition is on that exhibition's page. An exhibition with no page
+  on this site yet is described here in full: its ID is the one its page
+  would have here, and its url is its page on the artist's earlier site,
+  seungjojeong.com. The painting's subject is
   under "about": an ID shared by every painting on the site with the same
   subject, linked to Wikidata where an entry matches. The subject is in
   this data only and is not shown on the page.
@@ -42,6 +45,7 @@
       "about": { "@id": "https://www.seungjojeong.net/#aeroplane-seat" },
       "image": { "@id": "https://www.seungjojeong.net/works/interface-as-2020/#image" },
       "subjectOf": [
+        { "@id": "https://www.seungjojeong.net/exhibitions/2084/#exhibition" },
         { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
       ],
       "url": "https://www.seungjojeong.net/works/interface-as-2020/"
@@ -67,6 +71,46 @@
       "name": "Seungjo Jeong",
       "alternateName": "정승조",
       "url": "https://www.seungjojeong.net/"
+    },
+
+    {
+      "@type": "ExhibitionEvent",
+      "@id": "https://www.seungjojeong.net/exhibitions/2084/#exhibition",
+      "name": "2084",
+      "startDate": "2020-01-22",
+      "endDate": "2020-01-25",
+      "location": { "@id": "https://www.seungjojeong.net/exhibitions/2084/#dyson-gallery" },
+      "performer": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "workFeatured": { "@id": "https://www.seungjojeong.net/works/interface-as-2020/" },
+      "url": "https://www.seungjojeong.com/exhibitions-etc/2084"
+    },
+
+    {
+      "@type": "ArtGallery",
+      "@id": "https://www.seungjojeong.net/exhibitions/2084/#dyson-gallery",
+      "name": "The Dyson Gallery",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/#rca" }
+    },
+
+    {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://www.seungjojeong.net/#rca",
+      "name": "Royal College of Art",
+      "containedInPlace": { "@id": "https://www.seungjojeong.net/#london" },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q1753535",
+        "https://www.rca.ac.uk/"
+      ]
+    },
+
+    {
+      "@type": "City",
+      "@id": "https://www.seungjojeong.net/#london",
+      "name": "London",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q84",
+        "https://www.geonames.org/2643743"
+      ]
     },
 
     {
@@ -232,6 +276,7 @@
 
   <h2>Exhibitions</h2>
   <ul class="shown">
+    <li><a href="https://www.seungjojeong.com/exhibitions-etc/2084">2084</a><br><span class="m">The Dyson Gallery, Royal College of Art, London &middot; 22&ndash;25 January 2020</span></li>
     <li><a href="../../exhibitions/viva-exhibition/#jeong-interface-as">Viva Exhibition</a><br><span class="m">Royal College of Art, London &middot; 30 August 2024</span></li>
   </ul>
 
