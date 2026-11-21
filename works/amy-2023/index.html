@@ -74,7 +74,8 @@
       "image": { "@id": "https://www.seungjojeong.net/works/amy-2023/#image" },
       "subjectOf": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#exhibition" },
-        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#video-amy" }
       ],
       "url": "https://www.seungjojeong.net/works/amy-2023/"
     },
@@ -124,6 +125,17 @@
       "@id": "https://www.seungjojeong.net/#amazon-locker",
       "name": "Amazon Locker",
       "sameAs": "https://www.wikidata.org/wiki/Q16974764"
+    },
+
+    {
+      "@type": "VideoObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#video-amy",
+      "name": "Edges of the network - Amy (2023) - a polyptych painting #contemporarypainting #paintingexhibition",
+      "uploadDate": "2024-10-08",
+      "thumbnailUrl": "https://img.youtube.com/vi/JXCFYfJMU8s/hqdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/JXCFYfJMU8s",
+      "url": "https://youtu.be/JXCFYfJMU8s",
+      "recordedAt": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
     }
 
   ]
@@ -203,6 +215,15 @@
   .rel { font-size:0.8125rem; line-height:1.5; color:var(--quiet); margin-top:0.45rem; }
   .rel a { color:inherit; }
 
+  /* videos: YouTube embeds without cookies, each loaded only when it
+     scrolls into view; a Short keeps its upright shape */
+  .videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); gap: 2.5rem 2rem; margin: 0 0 1.25rem; align-items: start; }
+  .video { aspect-ratio: 16 / 9; background: var(--paper); margin: 0 0 0.95rem; }
+  .video iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .video.vertical { aspect-ratio: 9 / 16; max-width: 18rem; }
+  .vid .meta { font-size: 0.875rem; line-height: 1.5; }
+  .vid .meta .t { font-style: italic; color: var(--ink); }
+
   footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.875rem; color: var(--quiet); }
 
   /* Click to enlarge. The anchor wraps the image so this works without
@@ -277,6 +298,21 @@
     <li><a href="../../exhibitions/hopscotch/#jeong-amy">Hopscotch: RCA Research Biennale</a><br><span class="m">Copeland Gallery, London &middot; 22&ndash;24 June 2023</span></li>
     <li><a href="../../exhibitions/viva-exhibition/#jeong-amy">Viva Exhibition</a><br><span class="m">Royal College of Art, London &middot; 30 August 2024</span></li>
   </ul>
+
+  <h2>Video</h2>
+  <div class="videos">
+    <div class="vid">
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/JXCFYfJMU8s"
+                title="Amy: edges of the network, Viva Exhibition, Royal College of Art, London, 2024"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+      </div>
+      <p class="meta"><span class="t">Amy</span>: edges of the network &middot; filmed at the <a href="../../exhibitions/viva-exhibition/#video-amy">Viva Exhibition</a> (2024) &middot; uploaded 8 October 2024 &middot; <a href="https://youtu.be/JXCFYfJMU8s">Watch on YouTube</a></p>
+    </div>
+  </div>
 
   <footer>
     <p><a href="../../">seungjojeong.net</a></p>

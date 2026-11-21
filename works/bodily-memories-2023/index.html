@@ -69,7 +69,9 @@
       "image": { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#image" },
       "subjectOf": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
-        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#video-look-down-look-up-bodily-memories" },
+        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#video-bodily-memories" }
       ],
       "url": "https://www.seungjojeong.net/works/bodily-memories-2023/"
     },
@@ -129,6 +131,28 @@
       "@id": "https://www.seungjojeong.net/#videotape",
       "name": "Videotape",
       "sameAs": "https://www.wikidata.org/wiki/Q747779"
+    },
+
+    {
+      "@type": "VideoObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#video-look-down-look-up-bodily-memories",
+      "name": "\"Look Down, Look Up!\" & \"Bodily Memories\" #contemporarypainting #paintingexhibition",
+      "uploadDate": "2023-11-12",
+      "thumbnailUrl": "https://img.youtube.com/vi/8mjKi2RiY3U/hqdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/8mjKi2RiY3U",
+      "url": "https://youtu.be/8mjKi2RiY3U",
+      "recordedAt": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+    },
+
+    {
+      "@type": "VideoObject",
+      "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#video-bodily-memories",
+      "name": "Close-up view of \"Bodily Memories\" (2023) by Seungjo Jeong #contemporarypainting #royalcollegeofart",
+      "uploadDate": "2024-11-12",
+      "thumbnailUrl": "https://img.youtube.com/vi/9K2MvbQp1EY/hqdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/9K2MvbQp1EY",
+      "url": "https://youtu.be/9K2MvbQp1EY",
+      "recordedAt": { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
     }
 
   ]
@@ -208,6 +232,15 @@
   .rel { font-size:0.8125rem; line-height:1.5; color:var(--quiet); margin-top:0.45rem; }
   .rel a { color:inherit; }
 
+  /* videos: YouTube embeds without cookies, each loaded only when it
+     scrolls into view; a Short keeps its upright shape */
+  .videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); gap: 2.5rem 2rem; margin: 0 0 1.25rem; align-items: start; }
+  .video { aspect-ratio: 16 / 9; background: var(--paper); margin: 0 0 0.95rem; }
+  .video iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .video.vertical { aspect-ratio: 9 / 16; max-width: 18rem; }
+  .vid .meta { font-size: 0.875rem; line-height: 1.5; }
+  .vid .meta .t { font-style: italic; color: var(--ink); }
+
   footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.875rem; color: var(--quiet); }
 
   /* Click to enlarge. The anchor wraps the image so this works without
@@ -285,6 +318,32 @@
     <li><a href="../../exhibitions/hello-world/#jeong-bodily-memories">&ldquo;Hello, World!&rdquo;</a><br><span class="m">Galerie ERD, Seoul &middot; 12 October &ndash; 5 November 2023</span></li>
     <li><a href="../../exhibitions/viva-exhibition/#jeong-bodily-memories">Viva Exhibition</a><br><span class="m">Royal College of Art, London &middot; 30 August 2024</span></li>
   </ul>
+
+  <h2>Videos</h2>
+  <div class="videos">
+    <div class="vid">
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/8mjKi2RiY3U"
+                title="Look Down, Look Up! and Bodily Memories, “Hello, World!”, Galerie ERD, Seoul, 2023"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+      </div>
+      <p class="meta"><span class="t">Look Down, Look Up!</span> and <span class="t">Bodily Memories</span> &middot; filmed at <a href="../../exhibitions/hello-world/#video-look-down-look-up-bodily-memories">&ldquo;Hello, World!&rdquo;</a> (2023) &middot; uploaded 12 November 2023 &middot; <a href="https://youtu.be/8mjKi2RiY3U">Watch on YouTube</a></p>
+    </div>
+    <div class="vid">
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/9K2MvbQp1EY"
+                title="Close-up view of Bodily Memories, Viva Exhibition, Royal College of Art, London, 2024"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+      </div>
+      <p class="meta">Close-up view of <span class="t">Bodily Memories</span> &middot; filmed at the <a href="../../exhibitions/viva-exhibition/#video-bodily-memories">Viva Exhibition</a> (2024) &middot; uploaded 12 November 2024 &middot; <a href="https://youtu.be/9K2MvbQp1EY">Watch on YouTube</a></p>
+    </div>
+  </div>
 
   <footer>
     <p><a href="../../">seungjojeong.net</a></p>
