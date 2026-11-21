@@ -862,11 +862,13 @@
   .video iframe { width: 100%; height: 100%; border: 0; display: block; }
 
   /* videos: YouTube embeds without cookies, each loaded only when it
-     scrolls into view; a Short keeps its upright shape */
-  .videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); gap: 2.5rem 2rem; margin: 0 0 1.25rem; align-items: start; }
-  .video.vertical { aspect-ratio: 9 / 16; max-width: 18rem; }
+     scrolls into view. The listed videos are all YouTube Shorts, so their
+     players are upright (9:16), three to a row on a wide screen. */
+  .videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 2.5rem 2rem; margin: 0 0 1.25rem; align-items: start; }
+  .video.vertical { aspect-ratio: 9 / 16; max-width: 22rem; }
   .vid .meta { font-size: 0.875rem; line-height: 1.5; }
   .vid .meta .t { font-style: italic; color: var(--ink); }
+  .vid + .videos { margin-top: 2.5rem; }   /* the walkthrough above the grid */
 
   footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.875rem; color: var(--quiet); }
 
@@ -1012,12 +1014,12 @@
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen></iframe>
   </div>
-  <p class="meta">Exhibition walkthrough &middot; uploaded 13 February 2024 &middot; <a href="https://youtu.be/tK1X3N4FXQY">Watch on YouTube</a></p>
+  <p class="meta">Exhibition walkthrough &middot; <a href="https://youtu.be/tK1X3N4FXQY">Watch on YouTube</a></p>
   </div>
 
   <div class="videos">
     <div class="vid" id="video-panorama-1">
-      <div class="video">
+      <div class="video vertical">
         <iframe src="https://www.youtube-nocookie.com/embed/dZiWmCbWANM"
                 title="Panoramic view of the exhibition, “Hello, World!”, Galerie ERD, Seoul, 2023"
                 loading="lazy"
@@ -1025,10 +1027,10 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen></iframe>
       </div>
-      <p class="meta">Panoramic view of the exhibition &middot; uploaded 11 November 2023 &middot; <a href="https://youtu.be/dZiWmCbWANM">Watch on YouTube</a></p>
+      <p class="meta">Panoramic view of the exhibition &middot; <a href="https://youtu.be/dZiWmCbWANM">Watch on YouTube</a></p>
     </div>
     <div class="vid" id="video-look-down-look-up-bodily-memories">
-      <div class="video">
+      <div class="video vertical">
         <iframe src="https://www.youtube-nocookie.com/embed/8mjKi2RiY3U"
                 title="Look Down, Look Up! and Bodily Memories, “Hello, World!”, Galerie ERD, Seoul, 2023"
                 loading="lazy"
@@ -1036,21 +1038,21 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen></iframe>
       </div>
-      <p class="meta"><span class="t">Look Down, Look Up!</span> and <span class="t">Bodily Memories</span> &middot; uploaded 12 November 2023 &middot; <a href="https://youtu.be/8mjKi2RiY3U">Watch on YouTube</a></p>
+      <p class="meta"><span class="t">Look Down, Look Up!</span> and <span class="t">Bodily Memories</span> &middot; <a href="https://youtu.be/8mjKi2RiY3U">Watch on YouTube</a></p>
     </div>
     <div class="vid" id="video-panorama-2">
-      <div class="video">
+      <div class="video vertical">
         <iframe src="https://www.youtube-nocookie.com/embed/MGXCGznoy_E"
-                title="Panoramic view of the exhibition, “Hello, World!”, Galerie ERD, Seoul, 2023"
+                title="A second panoramic view of the exhibition, “Hello, World!”, Galerie ERD, Seoul, 2023"
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen></iframe>
       </div>
-      <p class="meta">Panoramic view of the exhibition &middot; uploaded 16 November 2023 &middot; <a href="https://youtu.be/MGXCGznoy_E">Watch on YouTube</a></p>
+      <p class="meta">A second panoramic view of the exhibition &middot; <a href="https://youtu.be/MGXCGznoy_E">Watch on YouTube</a></p>
     </div>
     <div class="vid" id="video-world-mirage">
-      <div class="video">
+      <div class="video vertical">
         <iframe src="https://www.youtube-nocookie.com/embed/OZucMG65SvE"
                 title="Close-up panorama of , World! and Mirage, “Hello, World!”, Galerie ERD, Seoul, 2023"
                 loading="lazy"
@@ -1058,7 +1060,7 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen></iframe>
       </div>
-      <p class="meta">Close-up panorama of <span class="t">, World!</span> and <span class="t">Mirage</span> &middot; uploaded 21 November 2023 &middot; <a href="https://youtu.be/OZucMG65SvE">Watch on YouTube</a></p>
+      <p class="meta">Close-up panorama of <span class="t">, World!</span> and <span class="t">Mirage</span> &middot; <a href="https://youtu.be/OZucMG65SvE">Watch on YouTube</a></p>
     </div>
     <div class="vid" id="video-short">
       <div class="video vertical">
@@ -1069,7 +1071,7 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen></iframe>
       </div>
-      <p class="meta">Short: the exhibition&rsquo;s language, interface and network &middot; uploaded 22 November 2023 &middot; <a href="https://www.youtube.com/shorts/ktJaSBaEIMU">Watch on YouTube</a></p>
+      <p class="meta">The exhibition&rsquo;s language, interface and network &middot; <a href="https://www.youtube.com/shorts/ktJaSBaEIMU">Watch on YouTube</a></p>
     </div>
   </div>
 
