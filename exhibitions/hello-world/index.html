@@ -60,6 +60,11 @@
       ],
       "location": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" },
       "performer": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "organizer": { "@id": "https://www.seungjojeong.net/#jeong" },
+      "contributor": [
+        { "@type": "Role", "roleName": "Curator", "contributor": { "@id": "https://www.seungjojeong.net/#jeong" } },
+        { "@type": "Role", "roleName": ["Host", "International transportation", "Promotion"], "contributor": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#galerie-erd" } }
+      ],
       "recordedIn": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#video-walkthrough" }
       ],
@@ -77,6 +82,8 @@
       "url": "http://galerieerd.com/",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "25, Hoenamu-ro 13ga-gil, Yongsan-gu",
+        "postalCode": "04344",
         "addressLocality": "Seoul",
         "addressCountry": "KR"
       },
@@ -89,7 +96,7 @@
           "@type": "LocationFeatureSpecification",
           "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#ceiling",
           "name": "Ceiling",
-          "value": "Low, umber-coloured",
+          "value": "Low, exposed concrete, grey-umber in colour",
           "description": "Makes the space feel darker. The paintings were made brighter than usual to compensate."
         },
         {
@@ -157,7 +164,7 @@
       "@type": "Place",
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello",
       "name": "Main wall",
-      "description": "The gallery’s main wall, on which Hello (2023) hung. Adjacent to the wall carrying , World! (2023): on the left, as seen facing , World!.",
+      "description": "The gallery’s main wall, on which Hello (2023) hung. Adjacent to the wall carrying , World! (2023): on the left, as seen facing , World!. No other work hung on it.",
       "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#main-room" },
       "geoTouches": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
       "additionalProperty": [
@@ -170,13 +177,14 @@
       "@type": "Place",
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world",
       "name": "Wall on which , World! (2023) hung",
-      "description": "Shorter than the 8 m a letter-form version of , World! would have needed, which led to the keyboard design. Hello (2023) hung on the adjacent main wall, to its left; Mirage (2023) on the adjacent wall to its right.",
+      "description": "Shorter than the 8 m a letter-form version of , World! would have needed, which led to the keyboard design. Hello (2023) hung on the adjacent main wall, to its left; Mirage (2023) on the adjacent wall to its right. No other work hung on it.",
       "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#main-room" },
       "geoTouches": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello" },
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage" }
       ],
       "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "White" },
         { "@type": "PropertyValue", "name": "length", "value": 5.4, "unitCode": "MTR" }
       ]
     },
@@ -185,10 +193,11 @@
       "@type": "Place",
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage",
       "name": "Wall with the courtyard window",
-      "description": "Adjacent to the wall carrying , World! (2023): on the right, as seen facing , World!. Mirage (2023) hung on it, beside the window.",
+      "description": "Adjacent to the wall carrying , World! (2023): on the right, as seen facing , World!. Mirage (2023) hung on it, beside the window. No other work hung on it.",
       "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#main-room" },
       "geoTouches": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
       "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "White" },
         { "@type": "PropertyValue", "name": "length", "value": 2.7, "unitCode": "MTR", "description": "The stretch of wall beside the window, on which Mirage (2023) hung; the window continues the same wall." }
       ]
     },
@@ -213,9 +222,10 @@
       "@type": "Place",
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-look-down-look-up",
       "name": "Wall on which Look Down, Look Up! (2023) hung",
-      "description": "The longest wall of the small room. It does not meet the wall carrying Bodily Memories (2023): the room’s 5.3 m wall runs between them.",
+      "description": "The longest wall of the small room. It does not meet the wall carrying Bodily Memories (2023): the room’s 5.3 m wall runs between them. No other work hung on it.",
       "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#small-room" },
       "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "White" },
         { "@type": "PropertyValue", "name": "length", "value": 6, "unitCode": "MTR" }
       ]
     },
@@ -224,9 +234,10 @@
       "@type": "Place",
       "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-bodily-memories",
       "name": "Wall on which Bodily Memories (2023) hung",
-      "description": "A wall of the small room. It does not meet the wall carrying Look Down, Look Up! (2023): the room’s 5.3 m wall runs between them.",
+      "description": "A wall of the small room. It does not meet the wall carrying Look Down, Look Up! (2023): the room’s 5.3 m wall runs between them. No other work hung on it.",
       "containedInPlace": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#small-room" },
       "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "White" },
         { "@type": "PropertyValue", "name": "length", "value": 4.8, "unitCode": "MTR" }
       ]
     },
@@ -578,6 +589,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/hello-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-hello" },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 20, "minValue": 15, "maxValue": 25, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale. It agrees with the 2.7 m ceiling and the 90 cm left above the painting." },
       "display:topEdgeBelowCeiling": { "@type": "QuantitativeValue", "maxValue": 90, "unitCode": "CMT" },
       "display:lighting": [
         { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#strip-lighting" },
@@ -592,6 +604,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/world-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-world" },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 43, "minValue": 38, "maxValue": 48, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
       "display:arrangement": "Rearranged for this wall: the yellow canvas at top left was swapped with the navy one, so that it would not compete with Hello on the adjacent wall to the left, and other canvases were moved to rebalance the nine colours."
     },
 
@@ -601,6 +614,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/mirage-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-mirage" },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 122, "minValue": 117, "maxValue": 127, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
       "display:nextTo": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#courtyard-window" },
       "display:arrangement": "The panel with the painted frame on the left, the linen panel with the blue shape on the right.",
       "description": "Hung right next to the window that looks out onto the gallery’s courtyard (exhibition text)."
@@ -612,6 +626,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/look-down-look-up-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-look-down-look-up" },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 29, "minValue": 24, "maxValue": 34, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale." },
       "description": "The exhibition text reads the hanging height as part of the work: where viewer and painting meet changes with the height at which it is hung."
     },
 
@@ -621,6 +636,7 @@
       "display:work": { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/" },
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-bodily-memories" },
+      "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 95, "minValue": 85, "maxValue": 105, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale; the photograph shows the wall at an angle, so the range is wider." },
       "display:arrangement": "Panels in the order white, gold, black, from left to right, as photographed at Galerie ERD."
     }
 
