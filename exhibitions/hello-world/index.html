@@ -21,10 +21,10 @@
 
 <!--
   Structured data, block 1 of 2: Schema.org only.
-  IDs on the site root (#jeong, #london) and under /works/ are site-wide
-  and are reused unchanged on any other page that mentions the artist,
-  London or these paintings (e.g. the Viva exhibition page). IDs ending in a #name
-  on this page belong to this exhibition only.
+  IDs on the site root (#jeong, #london) are site-wide. Each painting has
+  its own page at its /works/ address, which holds its full record; here
+  it is given only its name, date and image. IDs ending in a #name on this
+  page belong to this exhibition only.
 -->
 <script type="application/ld+json">
 {
@@ -199,15 +199,6 @@
     },
 
     {
-      "@type": "ExhibitionEvent",
-      "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition",
-      "name": "Viva Exhibition",
-      "startDate": "2024-08-30",
-      "endDate": "2024-08-30",
-      "url": "https://www.seungjojeong.net/exhibitions/viva-exhibition/"
-    },
-
-    {
       "@type": "City",
       "@id": "https://www.seungjojeong.net/#london",
       "name": "London",
@@ -270,15 +261,8 @@
       "dateCreated": "2023",
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
-      "artMedium": "Acrylic paint",
-      "artworkSurface": "Linen",
-      "description": "Polyptych of sixteen canvases. Its subject is the Amazon Locker.",
-      "height": { "@type": "QuantitativeValue", "value": 160, "unitCode": "CMT" },
-      "width": { "@type": "QuantitativeValue", "value": 670, "unitCode": "CMT" },
-      "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" },
-      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
-      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-hello" },
-      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+      "url": "https://www.seungjojeong.net/works/hello-2023/",
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-hello" }
     },
 
     {
@@ -288,15 +272,8 @@
       "dateCreated": "2023",
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
-      "artMedium": "Acrylic paint",
-      "artworkSurface": "Linen",
-      "description": "Polyptych of nine canvases, one for each key pressed to type ‘, World!’ on a computer keyboard.",
-      "height": { "@type": "QuantitativeValue", "value": 150, "unitCode": "CMT" },
-      "width": { "@type": "QuantitativeValue", "value": 350, "unitCode": "CMT" },
-      "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" },
-      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
-      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-world" },
-      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+      "url": "https://www.seungjojeong.net/works/world-2023/",
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-world" }
     },
 
     {
@@ -306,31 +283,8 @@
       "dateCreated": "2023",
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
-      "artMedium": "Acrylic paint",
-      "artworkSurface": "Linen",
-      "description": "Two parts, each 50 x 40 cm.",
-      "hasPart": [
-        {
-          "@type": "VisualArtwork",
-          "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-1",
-          "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
-          "width": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
-          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
-        },
-        {
-          "@type": "VisualArtwork",
-          "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-2",
-          "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
-          "width": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
-          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
-        }
-      ],
-      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
-      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-mirage" },
-      "subjectOf": [
-        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
-        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
-      ]
+      "url": "https://www.seungjojeong.net/works/mirage-2023/",
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-mirage" }
     },
 
     {
@@ -340,15 +294,8 @@
       "dateCreated": "2023",
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
-      "artMedium": "Acrylic paint",
-      "artworkSurface": "Linen",
-      "description": "Polyptych of nine canvases.",
-      "height": { "@type": "QuantitativeValue", "value": 160, "unitCode": "CMT" },
-      "width": { "@type": "QuantitativeValue", "value": 450, "unitCode": "CMT" },
-      "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" },
-      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
-      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-look-down-look-up" },
-      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" }
+      "url": "https://www.seungjojeong.net/works/look-down-look-up-2023/",
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-look-down-look-up" }
     },
 
     {
@@ -358,38 +305,8 @@
       "dateCreated": "2023",
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
-      "artMedium": "Acrylic paint",
-      "artworkSurface": "Linen",
-      "description": "Three parts, each 90 x 50 cm. Its subject is videotape. Metallic pigments make the colour and value shift with the light and the viewing angle.",
-      "hasPart": [
-        {
-          "@type": "VisualArtwork",
-          "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-1",
-          "height": { "@type": "QuantitativeValue", "value": 90, "unitCode": "CMT" },
-          "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
-          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
-        },
-        {
-          "@type": "VisualArtwork",
-          "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-2",
-          "height": { "@type": "QuantitativeValue", "value": 90, "unitCode": "CMT" },
-          "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
-          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
-        },
-        {
-          "@type": "VisualArtwork",
-          "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-3",
-          "height": { "@type": "QuantitativeValue", "value": 90, "unitCode": "CMT" },
-          "width": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
-          "depth": { "@type": "QuantitativeValue", "value": 4, "unitCode": "CMT" }
-        }
-      ],
-      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
-      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-bodily-memories" },
-      "subjectOf": [
-        { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
-        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
-      ]
+      "url": "https://www.seungjojeong.net/works/bodily-memories-2023/",
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-bodily-memories" }
     },
 
     {
@@ -601,8 +518,8 @@
   pairing of a work and an exhibition, not to the work, so each sits in
   its own record rather than on the painting: Bodily Memories can then
   have a different record on the Viva page without the two contradicting.
-  Terms starting "display:" are defined under
-  https://www.seungjojeong.net/ns/display# (not yet published).
+  Terms starting "display:" are defined at
+  https://www.seungjojeong.net/ns/display
   Kept in a separate block so that if any tool can't read it, block 1 is
   unaffected.
 -->
@@ -813,30 +730,30 @@
     <figure id="jeong-hello" class="wide">
       <a class="zoom" href="images/work-jeong-hello-2023.jpg"><img src="images/work-jeong-hello-2023.jpg"
            alt="The word HELLO in tall capital letters built from yellow canvases, with bands of bare grey linen. Small panels holding pale blue screen shapes are set into three of the letters. It runs almost the length of a white wall beneath an exposed concrete ceiling."></a>
-      <figcaption><span class="t">Hello</span>, 2023<br>160 &times; 670 cm overall, 16 parts &middot; acrylic on linen</figcaption>
+      <figcaption><a href="../../works/hello-2023/"><span class="t">Hello</span></a>, 2023<br>160 &times; 670 cm overall, 16 parts &middot; acrylic on linen</figcaption>
       <p class="rel">Made as a pair with <a href="#jeong-world"><em>, World!</em></a>.</p>
     </figure>
     <figure id="jeong-world" class="wide">
       <a class="zoom" href="images/work-jeong-world-2023.jpg"><img src="images/work-jeong-world-2023.jpg"
            alt="Nine canvases spaced across a white wall like keys lifted from a keyboard: small squares in blue, violet, red, green, pale blue, yellow and magenta, a long orange bar like a space bar, and a wider blue rectangle at right."></a>
-      <figcaption><span class="t">, World!</span>, 2023<br>150 &times; 350 cm overall, 9 parts &middot; acrylic on linen</figcaption>
+      <figcaption><a href="../../works/world-2023/"><span class="t">, World!</span></a>, 2023<br>150 &times; 350 cm overall, 9 parts &middot; acrylic on linen</figcaption>
       <p class="rel">Made as a pair with <a href="#jeong-hello"><em>Hello</em></a>.</p>
     </figure>
     <figure id="jeong-look-down-look-up" class="wide">
       <a class="zoom" href="images/work-jeong-look-down-look-up-2023.jpg"><img src="images/work-jeong-look-down-look-up-2023.jpg"
            alt="Three H-shaped letters in teal, yellow and green, each made of two tall columns of stacked canvases and bare linen joined by a small screen-shaped panel. The joining panel sits high in the first letter, in the middle of the second and low in the third."></a>
-      <figcaption><span class="t">Look Down, Look Up!</span>, 2023<br>160 &times; 450 cm overall, 9 parts &middot; acrylic on linen</figcaption>
+      <figcaption><a href="../../works/look-down-look-up-2023/"><span class="t">Look Down, Look Up!</span></a>, 2023<br>160 &times; 450 cm overall, 9 parts &middot; acrylic on linen</figcaption>
     </figure>
     <figure id="jeong-mirage" class="wide">
       <a class="zoom" href="images/work-jeong-mirage-2023.jpg"><img src="images/work-jeong-mirage-2023.jpg"
            alt="Two small canvases side by side: at left, an ochre panel with a trapezoid stepping inward; at right, bare linen holding a pale blue trapezoid above a thin pink band."></a>
-      <figcaption><span class="t">Mirage</span>, 2023<br>50 &times; 40 cm each, 2 parts &middot; acrylic on linen</figcaption>
+      <figcaption><a href="../../works/mirage-2023/"><span class="t">Mirage</span></a>, 2023<br>50 &times; 40 cm each, 2 parts &middot; acrylic on linen</figcaption>
       <p class="rel">Also shown in the <a href="../viva-exhibition/#jeong-mirage">Viva Exhibition</a> (2024).</p>
     </figure>
     <figure id="jeong-bodily-memories" class="wide">
       <a class="zoom" href="images/work-jeong-bodily-memories-2023.jpg"><img src="images/work-jeong-bodily-memories-2023.jpg"
            alt="Three tall canvases in white, gold and black, each in the shape of a videocassette, with rounded areas of bare linen at top and bottom."></a>
-      <figcaption><span class="t">Bodily Memories</span>, 2023<br>90 &times; 50 cm each, 3 parts &middot; acrylic on linen</figcaption>
+      <figcaption><a href="../../works/bodily-memories-2023/"><span class="t">Bodily Memories</span></a>, 2023<br>90 &times; 50 cm each, 3 parts &middot; acrylic on linen</figcaption>
       <p class="rel">Also shown in the <a href="../viva-exhibition/#jeong-bodily-memories">Viva Exhibition</a> (2024).</p>
     </figure>
   </div>

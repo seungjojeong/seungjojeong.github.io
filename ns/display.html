@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Display: a vocabulary for how a work was hung — Seungjo Jeong</title>
+<meta name="description" content="Terms for describing how a work was hung in an exhibition, used in the structured data of seungjojeong.net.">
+<link rel="canonical" href="https://www.seungjojeong.net/ns/display">
+
+<!--
+  The display: vocabulary. Each term's definition below has an id equal to
+  its name, so https://www.seungjojeong.net/ns/display#<name> opens it. The
+  same definitions, machine-readable, are in the script block that follows.
+  When a term changes, change it in both places and update dcterms:modified.
+-->
+<script type="application/ld+json">
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "vann": "http://purl.org/vocab/vann/",
+    "schema": "https://schema.org/",
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "display": "https://www.seungjojeong.net/ns/display#"
+  },
+  "@graph": [
+    {
+      "@id": "https://www.seungjojeong.net/ns/display",
+      "@type": "owl:Ontology",
+      "dcterms:title": "Display: a vocabulary for how a work was hung in an exhibition",
+      "dcterms:creator": {
+        "@id": "https://www.seungjojeong.net/#jeong"
+      },
+      "dcterms:modified": "2026-11-21",
+      "vann:preferredNamespacePrefix": "display",
+      "vann:preferredNamespaceUri": "https://www.seungjojeong.net/ns/display#",
+      "rdfs:comment": "Terms for facts that belong to the pairing of a work and an exhibition rather than to either alone. Status: draft."
+    },
+    {
+      "@id": "display:Display",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Display",
+      "rdfs:comment": "One work as hung in one exhibition. Its properties describe that hanging: the wall, what hung beside it, how its parts were arranged, how high it hung and how it was lit. A work shown in two exhibitions has two Display records, which can differ without contradicting each other.",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "rdfs:seeAlso": {
+        "@id": "crm:E7_Activity"
+      }
+    },
+    {
+      "@id": "display:work",
+      "@type": "rdf:Property",
+      "rdfs:label": "work",
+      "rdfs:comment": "The work that was hung. Every Display has exactly one.",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "schema:domainIncludes": {
+        "@id": "display:Display"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:VisualArtwork"
+        }
+      ],
+      "rdfs:seeAlso": {
+        "@id": "crm:P16_used_specific_object"
+      }
+    },
+    {
+      "@id": "display:exhibition",
+      "@type": "rdf:Property",
+      "rdfs:label": "exhibition",
+      "rdfs:comment": "The exhibition in which it was hung, or one showing of an exhibition that toured, when the hangings differed between venues. Every Display has exactly one.",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "schema:domainIncludes": {
+        "@id": "display:Display"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:ExhibitionEvent"
+        }
+      ],
+      "rdfs:seeAlso": {
+        "@id": "crm:P9i_forms_part_of"
+      }
+    },
+    {
+      "@id": "display:wall",
+      "@type": "rdf:Property",
+      "rdfs:label": "wall",
+      "rdfs:comment": "The wall it hung on, described as a Place within the room.",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "schema:domainIncludes": {
+        "@id": "display:Display"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Place"
+        }
+      ],
+      "rdfs:seeAlso": {
+        "@id": "crm:P7_took_place_at"
+      }
+    },
+    {
+      "@id": "display:nextTo",
+      "@type": "rdf:Property",
+      "rdfs:label": "nextTo",
+      "rdfs:comment": "What hung or stood beside it: another work, or a feature of the room such as a window. It says nothing about direction; the order along a wall is given in the wall's description.",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "schema:domainIncludes": {
+        "@id": "display:Display"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:VisualArtwork"
+        },
+        {
+          "@id": "schema:LocationFeatureSpecification"
+        }
+      ]
+    },
+    {
+      "@id": "display:arrangement",
+      "@type": "rdf:Property",
+      "rdfs:label": "arrangement",
+      "rdfs:comment": "How its parts were arranged on the wall for this exhibition, in words: the order of the panels, or how a polyptych was laid out.",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "schema:domainIncludes": {
+        "@id": "display:Display"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        }
+      ]
+    },
+    {
+      "@id": "display:lighting",
+      "@type": "rdf:Property",
+      "rdfs:label": "lighting",
+      "rdfs:comment": "The lighting in the room that fell on it, as one of the room's features.",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "schema:domainIncludes": {
+        "@id": "display:Display"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:LocationFeatureSpecification"
+        }
+      ]
+    },
+    {
+      "@id": "display:bottomEdgeAboveFloor",
+      "@type": "rdf:Property",
+      "rdfs:label": "bottomEdgeAboveFloor",
+      "rdfs:comment": "The height of its lowest edge above the floor, in centimetres (unitCode CMT).",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "schema:domainIncludes": {
+        "@id": "display:Display"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:QuantitativeValue"
+        }
+      ]
+    },
+    {
+      "@id": "display:topEdgeBelowCeiling",
+      "@type": "rdf:Property",
+      "rdfs:label": "topEdgeBelowCeiling",
+      "rdfs:comment": "The distance from its top edge to the ceiling, in centimetres (unitCode CMT). Use maxValue when only an upper limit is known.",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "schema:domainIncludes": {
+        "@id": "display:Display"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:QuantitativeValue"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    /* The same warm graphite as the other pages. */
+    --ink: #f2f0ec;
+    --paper: #262320;
+    --rule: #4a4540;
+    --quiet: #a39c93;
+    --measure: 34rem;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.0625rem/1.65 Charter, "Iowan Old Style", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 5rem 1.5rem 7rem; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 2.5rem;
+           margin-bottom: 3.5rem; max-width: var(--measure); }
+  h1 {
+    font-size: clamp(2rem, 5.5vw, 3.25rem);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.25rem;
+  }
+  .byline { font-size: 1.0625rem; margin: 0 0 0.4rem; }
+  .meta { color: var(--quiet); font-size: 0.9375rem; margin: 0 0 0.25rem; }
+  .meta + p:not(.meta) { margin-top: 1.25rem; }
+  h2 {
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    color: var(--quiet);
+    margin: 4.5rem 0 1.5rem;
+  }
+  p { max-width: var(--measure); margin: 0 0 1.25rem; }
+  a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 0.2em; }
+  a:hover { text-decoration-color: var(--ink); }
+
+  figure { margin: 0; }
+  figure img { width: 100%; height: auto; display: block; background: var(--paper); }
+  figcaption { font-size: 0.875rem; line-height: 1.5; color: var(--quiet); margin-top: 0.95rem; }
+  figcaption .t { font-style: italic; color: var(--ink); }
+
+  /* the works, as on the CBP 2022 and Three Painter Protocol pages. A
+     uniform square box levels the rows; object-fit: contain means nothing
+     is cropped, so landscape works sit width-constrained and portrait ones
+     height-constrained, each centred in its own box. */
+  .works { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 2.75rem 2rem; margin: 1.75rem 0 0; align-items: start; }
+  .works img { aspect-ratio: 1 / 1; object-fit: contain; background: var(--paper); }
+  .works figure { scroll-margin-top: 2rem; }
+  /* In a single column there are no rows to level, so each image takes its
+     own height, with a ceiling so a tall work doesn't run off the screen. */
+  @media (max-width: 34rem) {
+    .works img { aspect-ratio: auto; width: auto; max-width: 100%; max-height: 78vh; margin-inline: auto; }
+  }
+
+  /* installation views, full width while there is one; add a second
+     column (grid-template-columns: 1fr 1fr) once there are more */
+  .installs { display: grid; grid-template-columns: 1fr; gap: 3rem 2rem; margin: 0; }
+
+  /* floor plan beside its key; stacked on narrow screens */
+  .plan { display: grid; grid-template-columns: minmax(0, 24rem) 1fr; gap: 2rem 3rem; align-items: center; }
+  .plan img { background: #fff; }
+  .plan-key { margin: 0; padding-left: 1.5rem; font-size: 0.875rem; line-height: 1.9; color: var(--quiet); }
+  .plan-key .t { font-style: italic; }
+  @media (max-width: 40rem) { .plan { grid-template-columns: 1fr; } }
+
+  .rel { font-size:0.8125rem; line-height:1.5; color:var(--quiet); margin-top:0.45rem; }
+  .rel a { color:inherit; }
+
+  footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.875rem; color: var(--quiet); }
+
+  /* Click to enlarge. The anchor wraps the image so this works without
+     JavaScript too, in which case the browser simply opens the file. */
+  a.zoom { display: block; cursor: zoom-in; }
+  a.zoom:focus-visible { outline: 2px solid var(--quiet); outline-offset: 3px; }
+  #lightbox {
+    position: fixed; inset: 0; z-index: 50;
+    display: none; place-items: center;
+    background: rgba(16, 14, 12, 0.94);
+    padding: 2.5rem 1.5rem; cursor: zoom-out;
+  }
+  #lightbox.open { display: grid; }
+  #lightbox figure { margin: 0; display: flex; flex-direction: column;
+                     align-items: center; gap: 1rem; max-height: 100%; }
+  #lightbox img { max-width: 100%; max-height: calc(100vh - 8rem);
+                  width: auto; height: auto; object-fit: contain; }
+  #lightbox figcaption { color: var(--quiet); font-size: 0.8125rem;
+                         text-align: center; max-width: 40rem; margin: 0;
+                         line-height: 1.6; }
+  #lightbox figcaption .t { font-style: italic; color: var(--ink);
+                            font-size: 1rem; }
+  #lightbox button {
+    position: absolute; top: 1rem; right: 1.25rem;
+    background: none; border: 0; color: var(--quiet);
+    font: inherit; font-size: 1.5rem; line-height: 1; cursor: pointer;
+    padding: 0.25rem 0.5rem;
+  }
+  #lightbox button:hover, #lightbox button:focus-visible { color: var(--ink); }
+  @media (max-width: 34rem) {
+    #lightbox { padding: 3rem 0.5rem 1.5rem; }
+    #lightbox img { max-height: calc(100vh - 7rem); }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #lightbox.open img { animation: zoomin 0.18s ease-out; }
+    @keyframes zoomin { from { opacity: 0; transform: scale(0.98); } }
+  }
+
+  /* vocabulary page */
+  .lede { max-width: 40rem; }
+  .ns { display: grid; grid-template-columns: max-content 1fr; gap: 0.35rem 1.75rem; margin: 1.75rem 0 0; font-size: 0.9375rem; }
+  .ns dt { color: var(--quiet); }
+  .ns dd { margin: 0; overflow-wrap: anywhere; }
+  .term { margin: 2.5rem 0 0; scroll-margin-top: 2rem; max-width: 40rem; }
+  .term h3 { font: 600 1rem/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; margin: 0 0 0.3rem; color: var(--ink); }
+  .term .kind { color: var(--quiet); font-size: 0.875rem; margin: 0 0 0.7rem; }
+  .term .note { color: var(--quiet); font-size: 0.875rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.875em; }
+  pre { overflow-x: auto; background: rgba(255,255,255,0.045); border: 1px solid var(--rule); padding: 1rem 1.25rem; font-size: 0.8125rem; line-height: 1.55; margin: 1.25rem 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Display</h1>
+    <p class="byline">A vocabulary for how a work was hung &middot; <a href="../">Seungjo Jeong</a></p>
+  </header>
+
+  <p class="lede">Schema.org can say that an exhibition featured a work, but not where the work hung, beside what, in what arrangement, at what height or under what light. Those facts belong neither to the work nor to the exhibition alone, but to the pairing of the two. These terms record them, each in a Display record of its own.</p>
+  <p class="lede">They are used in the second block of structured data on the exhibition pages of this site: <a href="../exhibitions/cbp-2022/">Contemporary British Painting Prize 2022</a>, <a href="../exhibitions/hello-world/">&ldquo;Hello, World!&rdquo;</a> and the <a href="../exhibitions/viva-exhibition/">Viva Exhibition</a>.</p>
+
+  <dl class="ns">
+    <dt>Namespace</dt><dd><code>https://www.seungjojeong.net/ns/display#</code></dd>
+    <dt>Prefix</dt><dd><code>display:</code></dd>
+    <dt>Status</dt><dd>Draft</dd>
+    <dt>Last changed</dt><dd>21 November 2026</dd>
+  </dl>
+
+  <h2>Terms</h2>
+  <section class="term" id="Display">
+    <h3>display:Display</h3>
+    <p class="kind">Class</p>
+    <p>One work as hung in one exhibition. Its properties describe that hanging: the wall, what hung beside it, how its parts were arranged, how high it hung and how it was lit. A work shown in two exhibitions has two Display records, which can differ without contradicting each other.</p>
+    <p class="note">CIDOC CRM: <a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">E7</a> (an activity that forms part of the exhibition).</p>
+  </section>
+  <section class="term" id="work">
+    <h3>display:work</h3>
+    <p class="kind">Property of a Display &middot; value: <a href="https://schema.org/VisualArtwork">VisualArtwork</a></p>
+    <p>The work that was hung. Every Display has exactly one.</p>
+    <p class="note">CIDOC CRM: <a href="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object">P16</a> (used specific object).</p>
+  </section>
+  <section class="term" id="exhibition">
+    <h3>display:exhibition</h3>
+    <p class="kind">Property of a Display &middot; value: <a href="https://schema.org/ExhibitionEvent">ExhibitionEvent</a></p>
+    <p>The exhibition in which it was hung, or one showing of an exhibition that toured, when the hangings differed between venues. Every Display has exactly one.</p>
+    <p class="note">CIDOC CRM: <a href="http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of">P9i</a> (forms part of).</p>
+  </section>
+  <section class="term" id="wall">
+    <h3>display:wall</h3>
+    <p class="kind">Property of a Display &middot; value: <a href="https://schema.org/Place">Place</a></p>
+    <p>The wall it hung on, described as a Place within the room.</p>
+    <p class="note">CIDOC CRM: <a href="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at">P7</a> (took place at).</p>
+  </section>
+  <section class="term" id="nextTo">
+    <h3>display:nextTo</h3>
+    <p class="kind">Property of a Display &middot; value: <a href="https://schema.org/VisualArtwork">VisualArtwork</a> or <a href="https://schema.org/LocationFeatureSpecification">LocationFeatureSpecification</a></p>
+    <p>What hung or stood beside it: another work, or a feature of the room such as a window. It says nothing about direction; the order along a wall is given in the wall&#x27;s description.</p>
+  </section>
+  <section class="term" id="arrangement">
+    <h3>display:arrangement</h3>
+    <p class="kind">Property of a Display &middot; value: <a href="https://schema.org/Text">Text</a></p>
+    <p>How its parts were arranged on the wall for this exhibition, in words: the order of the panels, or how a polyptych was laid out.</p>
+    <p class="note">Planned: a list of the work's panel records in hanging order, so that two hangings of the same work can be compared by a machine.</p>
+  </section>
+  <section class="term" id="lighting">
+    <h3>display:lighting</h3>
+    <p class="kind">Property of a Display &middot; value: <a href="https://schema.org/LocationFeatureSpecification">LocationFeatureSpecification</a></p>
+    <p>The lighting in the room that fell on it, as one of the room&#x27;s features.</p>
+  </section>
+  <section class="term" id="bottomEdgeAboveFloor">
+    <h3>display:bottomEdgeAboveFloor</h3>
+    <p class="kind">Property of a Display &middot; value: <a href="https://schema.org/QuantitativeValue">QuantitativeValue</a></p>
+    <p>The height of its lowest edge above the floor, in centimetres (unitCode CMT).</p>
+    <p class="note">Not yet used on the site.</p>
+  </section>
+  <section class="term" id="topEdgeBelowCeiling">
+    <h3>display:topEdgeBelowCeiling</h3>
+    <p class="kind">Property of a Display &middot; value: <a href="https://schema.org/QuantitativeValue">QuantitativeValue</a></p>
+    <p>The distance from its top edge to the ceiling, in centimetres (unitCode CMT). Use maxValue when only an upper limit is known.</p>
+  </section>
+
+  <h2>Example</h2>
+  <p class="lede">The hanging of <a href="../works/bodily-memories-2023/"><em>Bodily Memories</em></a> at the Viva Exhibition. Its record on the &ldquo;Hello, World!&rdquo; page gives a different panel order, for a different hanging of the same painting.</p>
+<pre><code>{
+  &quot;@context&quot;: [
+    &quot;https://schema.org&quot;,
+    { &quot;display&quot;: &quot;https://www.seungjojeong.net/ns/display#&quot; }
+  ],
+  &quot;@type&quot;: &quot;display:Display&quot;,
+  &quot;@id&quot;: &quot;https://www.seungjojeong.net/exhibitions/viva-exhibition/#display-bodily-memories&quot;,
+  &quot;display:work&quot;: { &quot;@id&quot;: &quot;https://www.seungjojeong.net/works/bodily-memories-2023/&quot; },
+  &quot;display:exhibition&quot;: { &quot;@id&quot;: &quot;https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition&quot; },
+  &quot;display:wall&quot;: { &quot;@id&quot;: &quot;https://www.seungjojeong.net/exhibitions/viva-exhibition/#wall-window&quot; },
+  &quot;display:nextTo&quot;: [
+    { &quot;@id&quot;: &quot;https://www.seungjojeong.net/exhibitions/viva-exhibition/#window&quot; },
+    { &quot;@id&quot;: &quot;https://www.seungjojeong.net/works/interface-as-2020/&quot; }
+  ],
+  &quot;display:arrangement&quot;: &quot;Panels in the order gold, black, white, from left to right. At Galerie ERD they ran white, gold, black.&quot;
+}</code></pre>
+
+  <h2>Related vocabularies</h2>
+  <p class="lede">In <a href="https://cidoc-crm.org/">CIDOC CRM</a> terms, a Display can be read as an activity (E7) that forms part of the exhibition (P9i), used a specific object (P16) and took place at the wall (P7). The notes under each term give the nearest CRM class or property; they are pointers, not claims of equivalence.</p>
+
+  <footer>
+    <p><a href="../">seungjojeong.net</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

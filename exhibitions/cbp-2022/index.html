@@ -18,9 +18,10 @@
 <meta property="og:url" content="https://www.seungjojeong.net/exhibitions/cbp-2022/">
 
 <!--
-  Structured data. IDs on the site root (#jeong, #london) and under
-  /works/ are site-wide; IDs ending in a #name on this page belong to
-  this exhibition only.
+  Structured data. IDs on the site root (#jeong, #london) are site-wide.
+  Each painting has its own page at its /works/ address, which holds its
+  full record; here it is given only its name, date and image. IDs ending
+  in a #name on this page belong to this exhibition only.
 -->
 <script type="application/ld+json">
 {
@@ -248,16 +249,8 @@
       "dateCreated": "2020",
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
-      "artMedium": "Acrylic paint",
-      "artworkSurface": "Linen",
-      "description": "Six parts; 180 x 120 cm overall.",
-      "height": { "@type": "QuantitativeValue", "value": 180, "unitCode": "CMT" },
-      "width": { "@type": "QuantitativeValue", "value": 120, "unitCode": "CMT" },
-      "image": { "@id": "https://www.seungjojeong.net/exhibitions/cbp-2022/#img-jeong-interface-l" },
-      "subjectOf": [
-        { "@id": "https://www.seungjojeong.net/exhibitions/cbp-2022/#exhibition" },
-        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
-      ]
+      "url": "https://www.seungjojeong.net/works/interface-l-2020/",
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/cbp-2022/#img-jeong-interface-l" }
     },
 
     {
@@ -267,12 +260,8 @@
       "dateCreated": "2021",
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
-      "artMedium": "Acrylic paint",
-      "artworkSurface": "Linen",
-      "height": { "@type": "QuantitativeValue", "value": 91, "unitCode": "CMT" },
-      "width": { "@type": "QuantitativeValue", "value": 51, "unitCode": "CMT" },
-      "image": { "@id": "https://www.seungjojeong.net/exhibitions/cbp-2022/#img-jeong-interface-v" },
-      "subjectOf": { "@id": "https://www.seungjojeong.net/exhibitions/cbp-2022/#exhibition" }
+      "url": "https://www.seungjojeong.net/works/interface-v-2021/",
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/cbp-2022/#img-jeong-interface-v" }
     },
 
     {
@@ -282,18 +271,8 @@
       "dateCreated": "2022",
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
-      "artMedium": "Acrylic paint",
-      "artworkSurface": "Linen",
-      "description": "Painted on a canvas sewn from linen offcuts. Its subject is the old CRT television.",
-      "height": { "@type": "QuantitativeValue", "value": 55, "unitCode": "CMT" },
-      "width": { "@type": "QuantitativeValue", "value": 75, "unitCode": "CMT" },
-      "depth": { "@type": "QuantitativeValue", "value": 3.6, "unitCode": "CMT" },
-      "locationCreated": { "@id": "https://www.seungjojeong.net/#london" },
-      "image": { "@id": "https://www.seungjojeong.net/exhibitions/cbp-2022/#img-jeong-preloved" },
-      "subjectOf": [
-        { "@id": "https://www.seungjojeong.net/exhibitions/cbp-2022/#exhibition" },
-        { "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition" }
-      ]
+      "url": "https://www.seungjojeong.net/works/preloved-2022/",
+      "image": { "@id": "https://www.seungjojeong.net/exhibitions/cbp-2022/#img-jeong-preloved" }
     },
 
     {
@@ -336,15 +315,6 @@
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "copyrightNotice": "Work and photograph © Seungjo Jeong."
-    },
-
-    {
-      "@type": "ExhibitionEvent",
-      "@id": "https://www.seungjojeong.net/exhibitions/viva-exhibition/#exhibition",
-      "name": "Viva Exhibition",
-      "startDate": "2024-08-30",
-      "endDate": "2024-08-30",
-      "url": "https://www.seungjojeong.net/exhibitions/viva-exhibition/"
     }
 
   ]
@@ -358,8 +328,8 @@
   sits in its own record rather than on the painting: Preloved and
   Interface L also have records on the Viva page, describing a different
   hanging without contradicting this one.
-  Terms starting "display:" are defined under
-  https://www.seungjojeong.net/ns/display# (not yet published).
+  Terms starting "display:" are defined at
+  https://www.seungjojeong.net/ns/display
   Kept in a separate block so that if any tool can't read it, block 1 is
   unaffected.
 -->
@@ -528,18 +498,18 @@
     <figure id="jeong-interface-l">
       <a class="zoom" href="images/work-jeong-interface-l-2020.jpg"><img src="images/work-jeong-interface-l-2020.jpg"
            alt="Six purple-edged panels in two staggered rows. Above, three panels of bare linen hung at different heights, two of them carrying a small padlock symbol; below, three pale blue panels with darker blue and grey bands."></a>
-      <figcaption><span class="t">Interface L</span>, 2020<br>180 &times; 120 cm overall, 6 parts &middot; acrylic on linen</figcaption>
+      <figcaption><a href="../../works/interface-l-2020/"><span class="t">Interface L</span></a>, 2020<br>180 &times; 120 cm overall, 6 parts &middot; acrylic on linen</figcaption>
       <p class="rel">Also shown in the <a href="../viva-exhibition/#jeong-interface-l">Viva Exhibition</a> (2024).</p>
     </figure>
     <figure id="jeong-interface-v">
       <a class="zoom" href="images/work-jeong-interface-v-2021.jpg"><img src="images/work-jeong-interface-v-2021.jpg"
            alt="A tall canvas painted orange-red, fading into bare linen at its edges. Two rounded areas of bare linen sit near the top and bottom, with a paler rectangle between them and a band of coral down the right side."></a>
-      <figcaption><span class="t">Interface V</span>, 2021<br>91 &times; 51 cm &middot; acrylic on linen</figcaption>
+      <figcaption><a href="../../works/interface-v-2021/"><span class="t">Interface V</span></a>, 2021<br>91 &times; 51 cm &middot; acrylic on linen</figcaption>
     </figure>
     <figure id="jeong-preloved">
       <a class="zoom" href="images/work-jeong-preloved-2022.jpg"><img src="images/work-jeong-preloved-2022.jpg"
            alt="An old television set painted on bare linen: a large white screen with rounded corners, two white dials and a grille of white bars on the left, all inside a light purple-blue border. Seams run across the canvas where linen offcuts were sewn together."></a>
-      <figcaption><span class="t">Preloved</span>, 2022<br>55 &times; 75 cm &middot; acrylic on linen</figcaption>
+      <figcaption><a href="../../works/preloved-2022/"><span class="t">Preloved</span></a>, 2022<br>55 &times; 75 cm &middot; acrylic on linen</figcaption>
       <p class="rel">Also shown in the <a href="../viva-exhibition/#jeong-preloved">Viva Exhibition</a> (2024).</p>
     </figure>
   </div>
