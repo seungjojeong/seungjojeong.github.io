@@ -25,7 +25,8 @@
   record is on the home page; here the artist has only a name and address.
   Each painting has its own page at its /works/ address, which holds its
   full record; here it is given only its name, date and image. IDs ending
-  in a #name on this page belong to this exhibition only.
+  in a #name on this page belong to this exhibition only. Paintings whose
+  panel order is recorded in block 2 also list their panels.
 -->
 <script type="application/ld+json">
 {
@@ -338,6 +339,10 @@
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
       "url": "https://www.seungjojeong.net/works/mirage-2023/",
+      "hasPart": [
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-1", "description": "The panel with the painted frame." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-2", "description": "The linen panel with the blue shape." }
+      ],
       "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-mirage" }
     },
 
@@ -360,6 +365,11 @@
       "creator": { "@id": "https://www.seungjojeong.net/#jeong" },
       "artform": "Painting",
       "url": "https://www.seungjojeong.net/works/bodily-memories-2023/",
+      "hasPart": [
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-1", "description": "The white panel." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-2", "description": "The gold panel." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-3", "description": "The black panel." }
+      ],
       "image": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-jeong-bodily-memories" }
     },
 
@@ -649,6 +659,9 @@
   Each estimated height names the photograph it was read from
   (display:estimatedFrom), and each photograph of the hanging lists,
   under "about" in block 1, the records here that it shows.
+  Where the panels can be told apart, display:panelOrder lists them
+  left to right as hung (an upper panel before the one below it); they
+  are the painting's own panel records, named or described in block 1.
   Terms starting "display:" are defined at
   https://www.seungjojeong.net/ns/display
   Kept in a separate block so that if any tool can't read it, block 1 is
@@ -696,6 +709,10 @@
       "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 122, "minValue": 117, "maxValue": 127, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-05" } },
       "display:nextTo": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#courtyard-window" },
       "display:arrangement": "The panel with the painted frame on the left, the linen panel with the blue shape on the right.",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-1" },
+        { "@id": "https://www.seungjojeong.net/works/mirage-2023/#panel-2" }
+      ] },
       "description": "Hung right next to the window that looks out onto the gallery’s courtyard (exhibition text)."
     },
 
@@ -716,7 +733,12 @@
       "display:exhibition": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#exhibition" },
       "display:wall": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#wall-bodily-memories" },
       "display:bottomEdgeAboveFloor": { "@type": "QuantitativeValue", "value": 95, "minValue": 85, "maxValue": 105, "unitCode": "CMT", "description": "Estimated from an installation photograph, not measured: the painting’s own height used as the scale; the photograph shows the wall at an angle, so the range is wider.", "display:estimatedFrom": { "@id": "https://www.seungjojeong.net/exhibitions/hello-world/#img-install-08" } },
-      "display:arrangement": "Panels in the order white, gold, black, from left to right, as photographed at Galerie ERD."
+      "display:arrangement": "Panels in the order white, gold, black, from left to right, as photographed at Galerie ERD.",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-1" },
+        { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-2" },
+        { "@id": "https://www.seungjojeong.net/works/bodily-memories-2023/#panel-3" }
+      ] }
     }
 
   ]

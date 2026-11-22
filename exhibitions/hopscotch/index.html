@@ -25,7 +25,8 @@
   exhibition's title is the one in the artist's thesis; the Royal College
   of Art's own page calls it Research Biennale 2023 (alternateName). Only
   the artist's own work is recorded; the other research students' works
-  are mentioned in the wall's description, not as records.
+  are mentioned in the wall's description, not as records. The painting
+  also lists its panels, whose order is recorded in block 2.
 -->
 <script type="application/ld+json">
 {
@@ -263,6 +264,13 @@
       },
       "artform": "Painting",
       "url": "https://www.seungjojeong.net/works/amy-2023/",
+      "hasPart": [
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-1", "name": "H, long canvas", "description": "One of the H’s two long canvases: the one whose lowest band is bare linen." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-2", "name": "H, centre panel", "description": "The user interface module of Amazon Locker, set between the H’s two long canvases." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-3", "name": "H, long canvas", "description": "One of the H’s two long canvases: the one whose lowest band is orange." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-4", "name": "i, square panel", "description": "The dot of the i." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-5", "name": "i, tall panel", "description": "The stem of the i." }
+      ],
       "image": {
         "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#img-jeong-amy"
       }
@@ -298,6 +306,9 @@
   Each estimated height names the photograph it was read from
   (display:estimatedFrom), and each photograph of the hanging lists,
   under "about" in block 1, the records here that it shows.
+  Where the panels can be told apart, display:panelOrder lists them
+  left to right as hung (an upper panel before the one below it); they
+  are the painting's own panel records, named or described in block 1.
   Terms starting "display:" are defined at
   https://www.seungjojeong.net/ns/display
   Kept in a separate block so that if any tool can't read it, block 1 is
@@ -334,7 +345,14 @@
           "@id": "https://www.seungjojeong.net/exhibitions/hopscotch/#img-install-02"
         }
       },
-      "display:arrangement": "Five panels hung as the letters H and i: two tall columns joined by a smaller panel form the H, and a square panel above a tall one forms the i. The H’s left column ended in an orange band and its right column in a band of bare linen: the other way round from the Viva Exhibition (2024). The joining panel sat lower than at the Viva, its top about 50 cm below the tops of the columns, against about 30 cm at the Viva (both estimated from the photographs)."
+      "display:arrangement": "Five panels hung as the letters H and i: two tall columns joined by a smaller panel form the H, and a square panel above a tall one forms the i. The H’s left column ended in an orange band and its right column in a band of bare linen: the other way round from the Viva Exhibition (2024). The joining panel sat lower than at the Viva, its top about 50 cm below the tops of the columns, against about 30 cm at the Viva (both estimated from the photographs).",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-3" },
+        { "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-2" },
+        { "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-1" },
+        { "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-4" },
+        { "@id": "https://www.seungjojeong.net/works/amy-2023/#panel-5" }
+      ] }
     }
 
   ]

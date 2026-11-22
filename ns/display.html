@@ -33,7 +33,7 @@
       "dcterms:creator": {
         "@id": "https://www.seungjojeong.net/#jeong"
       },
-      "dcterms:modified": "2026-11-21",
+      "dcterms:modified": "2026-11-22",
       "vann:preferredNamespacePrefix": "display",
       "vann:preferredNamespaceUri": "https://www.seungjojeong.net/ns/display#",
       "rdfs:comment": "Terms for facts that belong to the pairing of a work and an exhibition rather than to either alone. Status: draft."
@@ -134,7 +134,7 @@
       "@id": "display:arrangement",
       "@type": ["rdf:Property", "schema:Property"],
       "rdfs:label": "arrangement",
-      "rdfs:comment": "How its parts were arranged on the wall for this exhibition, in words: the order of the panels, or how a polyptych was laid out.",
+      "rdfs:comment": "How its parts were arranged on the wall for this exhibition, in words: the order of the panels, or how a polyptych was laid out. The order of the panels can also be given as data with panelOrder; arrangement keeps what a list can't say, such as how far one panel sat below another.",
       "rdfs:isDefinedBy": {
         "@id": "https://www.seungjojeong.net/ns/display"
       },
@@ -217,6 +217,23 @@
       "rdfs:seeAlso": {
         "@id": "crm:P16_used_specific_object"
       }
+    },
+    {
+      "@id": "display:panelOrder",
+      "@type": ["rdf:Property", "schema:Property"],
+      "rdfs:label": "panelOrder",
+      "rdfs:comment": "The work's panels in the order they hung, from left to right as seen facing the wall; where one panel hung above another, the upper one comes first. The value is a list (@list) of the work's own panel records, the parts it lists under schema:hasPart, so the same panel can be followed from one hanging to the next. The panel records' numbers are labels, not an order: tell the panels apart by their names or descriptions.",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.seungjojeong.net/ns/display"
+      },
+      "schema:domainIncludes": {
+        "@id": "display:Display"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:VisualArtwork"
+        }
+      ]
     }
   ]
 }
@@ -361,7 +378,7 @@
     <dt>Namespace</dt><dd><code>https://www.seungjojeong.net/ns/display#</code></dd>
     <dt>Prefix</dt><dd><code>display:</code></dd>
     <dt>Status</dt><dd>Draft</dd>
-    <dt>Last changed</dt><dd>21 November 2026</dd>
+    <dt>Last changed</dt><dd>22 November 2026</dd>
   </dl>
 
   <h2>Terms</h2>
@@ -399,7 +416,7 @@
     <h3>display:arrangement</h3>
     <p class="kind">Property of a Display &middot; value: <a href="https://schema.org/Text">Text</a></p>
     <p>How its parts were arranged on the wall for this exhibition, in words: the order of the panels, or how a polyptych was laid out.</p>
-    <p class="note">Planned: a list of the work's panel records in hanging order, so that two hangings of the same work can be compared by a machine.</p>
+    <p class="note">The order of the panels can also be given as data with <a href="#panelOrder">panelOrder</a>; arrangement keeps what a list can&rsquo;t say, such as how far one panel sat below another.</p>
   </section>
   <section class="term" id="lighting">
     <h3>display:lighting</h3>
@@ -423,9 +440,15 @@
     <p>The photograph from which an estimated value was worked out, such as a height read off an installation view. It goes inside the value it qualifies, so that the estimate points to its evidence and can be checked against it.</p>
     <p class="note">Schema.org has no way to say where a value came from. CIDOC CRM: <a href="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object">P16</a> (used specific object), with the estimate read as a measurement (E16) that used the photograph.</p>
   </section>
+  <section class="term" id="panelOrder">
+    <h3>display:panelOrder</h3>
+    <p class="kind">Property of a Display &middot; value: a list of <a href="https://schema.org/VisualArtwork">VisualArtwork</a></p>
+    <p>The work&rsquo;s panels in the order they hung, from left to right as seen facing the wall; where one panel hung above another, the upper one comes first. Each item is one of the work&rsquo;s own panel records (the parts it lists under <a href="https://schema.org/hasPart">hasPart</a>), so the same panel can be followed from one hanging to the next, and two hangings of the work can be compared by a machine.</p>
+    <p class="note">Written as a JSON-LD list (<code>@list</code>), because the order is the point. The panel records&rsquo; numbers are labels, not an order: tell the panels apart by their names or descriptions, such as the colour of each panel.</p>
+  </section>
 
   <h2>Example</h2>
-  <p class="lede">The hanging of <a href="../works/bodily-memories-2023/"><em>Bodily Memories</em></a> at the Viva Exhibition. Its record on the &ldquo;Hello, World!&rdquo; page gives a different panel order, for a different hanging of the same painting. The height was read off installation view 04, whose own record lists this Display among the things it is about.</p>
+  <p class="lede">The hanging of <a href="../works/bodily-memories-2023/"><em>Bodily Memories</em></a> at the Viva Exhibition. Its record on the &ldquo;Hello, World!&rdquo; page gives a different panel order, for a different hanging of the same painting: there the list runs panel 1, 2, 3 (white, gold, black). The height was read off installation view 04, whose own record lists this Display among the things it is about.</p>
 <pre><code>{
   &quot;@context&quot;: [
     &quot;https://schema.org&quot;,
@@ -446,7 +469,12 @@
     { &quot;@id&quot;: &quot;https://www.seungjojeong.net/exhibitions/viva-exhibition/#window-left&quot; },
     { &quot;@id&quot;: &quot;https://www.seungjojeong.net/exhibitions/viva-exhibition/#window&quot; }
   ],
-  &quot;display:arrangement&quot;: &quot;Panels in the order gold, black, white, from left to right. At Galerie ERD they ran white, gold, black.&quot;
+  &quot;display:arrangement&quot;: &quot;Panels in the order gold, black, white, from left to right. At Galerie ERD they ran white, gold, black.&quot;,
+  &quot;display:panelOrder&quot;: { &quot;@list&quot;: [
+    { &quot;@id&quot;: &quot;https://www.seungjojeong.net/works/bodily-memories-2023/#panel-2&quot; },
+    { &quot;@id&quot;: &quot;https://www.seungjojeong.net/works/bodily-memories-2023/#panel-3&quot; },
+    { &quot;@id&quot;: &quot;https://www.seungjojeong.net/works/bodily-memories-2023/#panel-1&quot; }
+  ] }
 }</code></pre>
 
   <h2>Related vocabularies</h2>

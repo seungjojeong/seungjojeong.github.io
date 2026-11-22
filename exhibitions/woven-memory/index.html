@@ -23,7 +23,8 @@
   full record; here it is given only its name, date and image. IDs ending
   in a #name on this page belong to this exhibition only. Two paintings on
   the site are titled Preloved (2022): the one shown here is
-  /works/preloved-2022-b/.
+  /works/preloved-2022-b/. Paintings whose panel order is recorded in
+  block 2 also list their panels.
 -->
 <script type="application/ld+json">
 {
@@ -571,6 +572,11 @@
       },
       "artform": "Painting",
       "url": "https://www.seungjojeong.net/works/frankenstein-2022/",
+      "hasPart": [
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/frankenstein-2022/#panel-1", "description": "The closed teal door." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/frankenstein-2022/#panel-2", "description": "The open locker." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/frankenstein-2022/#panel-3", "description": "The linen door." }
+      ],
       "image": {
         "@id": "https://www.seungjojeong.net/exhibitions/woven-memory/#img-jeong-frankenstein"
       }
@@ -586,6 +592,10 @@
       },
       "artform": "Painting",
       "url": "https://www.seungjojeong.net/works/mirage-i-2022/",
+      "hasPart": [
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/mirage-i-2022/#panel-1", "description": "The linen panel with the pale blue shape." },
+        { "@type": "VisualArtwork", "@id": "https://www.seungjojeong.net/works/mirage-i-2022/#panel-2", "description": "The orange-yellow panel." }
+      ],
       "image": {
         "@id": "https://www.seungjojeong.net/exhibitions/woven-memory/#img-jeong-mirage-i"
       }
@@ -745,6 +755,9 @@
   Each estimated height names the photograph it was read from
   (display:estimatedFrom), and each photograph of the hanging lists,
   under "about" in block 1, the records here that it shows.
+  Where the panels can be told apart, display:panelOrder lists them
+  left to right as hung (an upper panel before the one below it); they
+  are the painting's own panel records, named or described in block 1.
   Terms starting "display:" are defined at
   https://www.seungjojeong.net/ns/display
   Kept in a separate block so that if any tool can't read it, block 1 is
@@ -877,7 +890,12 @@
           "@id": "https://www.seungjojeong.net/exhibitions/woven-memory/#img-install-03"
         }
       },
-      "display:arrangement": "Three panels side by side in a single row: the closed teal door on the left, the open locker in the middle, the linen door on the right. The same order as at the Viva Exhibition."
+      "display:arrangement": "Three panels side by side in a single row: the closed teal door on the left, the open locker in the middle, the linen door on the right. The same order as at the Viva Exhibition.",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.seungjojeong.net/works/frankenstein-2022/#panel-1" },
+        { "@id": "https://www.seungjojeong.net/works/frankenstein-2022/#panel-2" },
+        { "@id": "https://www.seungjojeong.net/works/frankenstein-2022/#panel-3" }
+      ] }
     },
 
     {
@@ -903,7 +921,11 @@
           "@id": "https://www.seungjojeong.net/exhibitions/woven-memory/#img-install-05"
         }
       },
-      "display:arrangement": "The orange-yellow panel on the left, the linen panel with the pale blue shape on the right: the reverse of their order in the painting’s photograph."
+      "display:arrangement": "The orange-yellow panel on the left, the linen panel with the pale blue shape on the right: the reverse of their order in the painting’s photograph.",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.seungjojeong.net/works/mirage-i-2022/#panel-2" },
+        { "@id": "https://www.seungjojeong.net/works/mirage-i-2022/#panel-1" }
+      ] }
     },
 
     {
