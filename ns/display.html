@@ -2,13 +2,17 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js). Visitor statistics only: Google signals and ad
+     personalisation off. A visitor can turn statistics off on any rights
+     page; the choice is kept in their browser ("stats-off"), and the tag
+     then sets no cookies and sends nothing. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-783CPJRDNN"></script>
 <script>
+  try { if (localStorage.getItem('stats-off') === '1') window['ga-disable-G-783CPJRDNN'] = true; } catch (e) {}
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-783CPJRDNN');
+  gtag('config', 'G-783CPJRDNN', { allow_google_signals: false, allow_ad_personalization_signals: false });
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Display: a vocabulary for how a work was hung — Seungjo Jeong</title>
