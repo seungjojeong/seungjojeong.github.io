@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js). Visitor statistics only: Google signals and ad
+     personalisation off. A visitor can turn statistics off on any rights
+     page; the choice is kept in their browser ("stats-off"), and the tag
+     then sets no cookies and sends nothing. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-783CPJRDNN"></script>
+<script>
+  try { if (localStorage.getItem('stats-off') === '1') window['ga-disable-G-783CPJRDNN'] = true; } catch (e) {}
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-783CPJRDNN', { allow_google_signals: false, allow_ad_personalization_signals: false });
+</script>
+<!-- Google tag (gtag.js): paste the same snippet as index.html, if any. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Rights and permissions — Unruly Encounters — Seungjo Jeong</title>
+<meta name="description" content="Copyright and licensing terms for images of the work and installation views from Unruly Encounters.">
+<meta name="robots" content="index, follow">
+
+<style>
+  :root { --ink:#1a1a1a; --paper:#faf9f7; --rule:#d8d4cc; --quiet:#6b6560; --measure:34rem; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font:400 1.0625rem/1.65 Charter,"Iowan Old Style",Georgia,serif;
+         -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:60rem; margin:0 auto; padding:5rem 1.5rem 7rem; }
+  header { border-bottom:1px solid var(--rule); padding-bottom:2.5rem; margin-bottom:3.5rem; }
+  h1 { font-size:clamp(1.75rem,4.5vw,2.5rem); line-height:1.1; font-weight:400;
+       letter-spacing:-0.015em; margin:0 0 1rem; }
+  .meta { color:var(--quiet); font-size:0.9375rem; margin:0; }
+  h2 { font-size:0.8125rem; text-transform:uppercase; letter-spacing:0.1em;
+       font-weight:600; color:var(--quiet); margin:3.5rem 0 1.25rem; }
+  p, li { max-width:var(--measure); }
+  p { margin:0 0 1.25rem; }
+  ul { padding-left:1.1rem; margin:0 0 1.25rem; }
+  li { margin-bottom:0.5rem; }
+  a { color:inherit; text-decoration-color:var(--rule); text-underline-offset:0.2em; }
+  a:hover { text-decoration-color:var(--ink); }
+  footer { margin-top:5rem; padding-top:2rem; border-top:1px solid var(--rule);
+           font-size:0.875rem; color:var(--quiet); }
+  button { font:inherit; font-size:0.9375rem; color:var(--ink); background:none;
+           border:1px solid var(--rule); padding:0.4rem 0.8rem; cursor:pointer; }
+  button:hover { border-color:var(--ink); }
+  .stats-state { display:block; margin-top:0.6rem; color:var(--quiet); font-size:0.9375rem; }
+  code { font-size:0.875em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Rights and permissions</h1>
+    <p class="meta"><a href="index.html">Unruly Encounters</a> &middot; <a href="../../">Seungjo Jeong</a></p>
+  </header>
+
+  <h2>Copyright</h2>
+  <p>Copyright in the painting and in all photographs on this page &mdash; both the installation views and the images of individual works &mdash; is held by Seungjo Jeong. All rights are reserved.</p>
+
+  <h2>Permitted use</h2>
+  <p>Installation views and images of works may be reproduced for editorial, press and non-commercial academic purposes, provided that:</p>
+  <ul>
+    <li>the artist, title, year and medium are given as shown in the caption;</li>
+    <li>the photographer is credited;</li>
+    <li>the exhibition, <em>Unruly Encounters</em> at the Lake Gallery, Southwark Park Galleries, London, is named; and</li>
+    <li>the image is reproduced in full, without cropping, overprinting or alteration.</li>
+  </ul>
+
+  <h2>All other use</h2>
+  <p>Commercial reproduction, use in training data for machine learning systems, and any use not covered above require written permission in advance from the artist.</p>
+
+
+  <h2 id="visitor-statistics">Visitor statistics</h2>
+  <p>This site uses Google Analytics to count visits: which pages are viewed and for how long, how far people scroll, which links they follow, where they came from, roughly where they are (to the nearest city), and what device and browser they use. The figures are seen only as totals, to understand how the site is used and to improve it.</p>
+  <p>Google&rsquo;s advertising features and data sharing are turned off, so the information is used only for these statistics. Google Analytics does not log or store IP addresses. To tell one visit from another, it stores two cookies in your browser, <code>_ga</code> and <code>_ga_783CPJRDNN</code>, each kept for up to a year.</p>
+  <p id="stats-switch" hidden><button type="button"></button> <span class="stats-state" aria-live="polite"></span></p>
+  <p>This site is run by Seungjo Jeong. Questions: <a href="mailto:enquiries@seungjojeong.com">enquiries@seungjojeong.com</a>.</p>
+  <footer>
+    <p>&copy; 2022 Seungjo Jeong. <a href="index.html">Back to the exhibition</a>.</p>
+  </footer>
+
+</div>
+<script>
+/* The switch for visitor statistics. Off: the choice is kept in this
+   browser, the Analytics cookies are removed and the tag on every page
+   sends nothing. On: the choice is removed and counting resumes from the
+   next page. Without JavaScript the tag doesn't run, so there is nothing
+   to switch and the switch stays hidden. */
+(function () {
+  var box = document.getElementById('stats-switch');
+  if (!box) return;
+  var button = box.querySelector('button'), state = box.querySelector('.stats-state');
+  function isOff() { try { return localStorage.getItem('stats-off') === '1'; } catch (e) { return false; } }
+  function show() {
+    button.textContent = isOff() ? 'Turn visitor statistics back on in this browser'
+                                 : 'Turn off visitor statistics in this browser';
+  }
+  function removeCookies() {
+    var host = location.hostname.split('.');
+    var domains = ['', '.' + host.slice(-2).join('.'), location.hostname];
+    ['_ga', '_ga_783CPJRDNN'].forEach(function (name) {
+      domains.forEach(function (d) {
+        document.cookie = name + '=; Max-Age=0; path=/' + (d ? '; domain=' + d : '');
+      });
+    });
+  }
+  button.addEventListener('click', function () {
+    try {
+      if (isOff()) {
+        localStorage.removeItem('stats-off');
+        state.textContent = 'Visitor statistics are on again from the next page you open.';
+      } else {
+        localStorage.setItem('stats-off', '1');
+        window['ga-disable-G-783CPJRDNN'] = true;
+        removeCookies();
+        state.textContent = 'Visitor statistics are off in this browser.';
+      }
+    } catch (e) {
+      state.textContent = 'This browser doesn\u2019t allow the choice to be saved.';
+    }
+    show();
+  });
+  show();
+  box.hidden = false;
+})();
+</script>
+</body>
+</html>
